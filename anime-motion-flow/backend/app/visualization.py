@@ -85,34 +85,55 @@ def _draw_selective_velocity_needles(
     step: int,
 ) -> np.ndarray:
     height, width = magnitude.shape
-    max_vector_length = max(float(step) * 1.35, 1.0)
+    half_window = max(step // 3, 5)
+    max_vector_length = max(float(step) * 1.05, 1.0)
+    min_vector_length = max(float(step) * 0.12, 2.5)
 
     for y in range(step // 2, height, step):
         for x in range(step // 2, width, step):
-            speed = float(magnitude[y, x])
-            if speed < threshold:
+            y0 = max(y - half_window, 0)
+            y1 = min(y + half_window + 1, height)
+            x0 = max(x - half_window, 0)
+            x1 = min(x + half_window + 1, width)
+
+            local_magnitude = magnitude[y0:y1, x0:x1]
+            active_mask = local_magnitude >= threshold
+            if not np.any(active_mask):
                 continue
 
-            dx = float(flow[y, x, 0])
-            dy = float(flow[y, x, 1])
-            length = float(np.hypot(dx, dy))
-            if length <= 1e-6:
+            active_ratio = float(np.count_nonzero(active_mask)) / float(active_mask.size)
+            if active_ratio < 0.025:
                 continue
+
+            weights = local_magnitude[active_mask].astype(np.float32)
+            weight_sum = float(weights.sum())
+            if weight_sum <= 1e-6:
+                continue
+
+            local_flow = flow[y0:y1, x0:x1][active_mask]
+            dx = float(np.sum(local_flow[:, 0] * weights) / weight_sum)
+            dy = float(np.sum(local_flow[:, 1] * weights) / weight_sum)
+            length = float(np.hypot(dx, dy))
+            if length < min_vector_length:
+                continue
+
+            yy, xx = np.mgrid[y0:y1, x0:x1]
+            start_x = int(np.clip(round(float(np.sum(xx[active_mask] * weights) / weight_sum)), 0, width - 1))
+            start_y = int(np.clip(round(float(np.sum(yy[active_mask] * weights) / weight_sum)), 0, height - 1))
 
             scale = min(1.0, max_vector_length / length)
-            end_x = int(np.clip(round(x + dx * scale), 0, width - 1))
-            end_y = int(np.clip(round(y + dy * scale), 0, height - 1))
+            end_x = int(np.clip(round(start_x + dx * scale), 0, width - 1))
+            end_y = int(np.clip(round(start_y + dy * scale), 0, height - 1))
 
             cv2.arrowedLine(
                 arrows,
-                (x, y),
+                (start_x, start_y),
                 (end_x, end_y),
-                color=(80, 255, 80),
+                color=(36, 255, 94),
                 thickness=2,
                 line_type=cv2.LINE_AA,
-                tipLength=0.28,
+                tipLength=0.24,
             )
-            cv2.circle(arrows, (x, y), 1, (30, 180, 30), thickness=-1, lineType=cv2.LINE_AA)
 
     return arrows
 
@@ -121,21 +142,23 @@ def render_academic_flow_visualization(
     frame: np.ndarray,
     flow_tensor: Any,
     *,
-    sample_step: int = 32,
-    activation_percentile: float = 78.0,
+    sample_step: int = 40,
+    activation_percentile: float = 86.0,
     saturation_percentile: float = 99.2,
-    adaptive_percentile: float = 97.0,
-    min_arrow_magnitude: float = 18.0,
-    frame_alpha: float = 0.82,
-    hsv_alpha: float = 0.38,
-    arrow_alpha: float = 0.9,
+    adaptive_percentile: float = 98.0,
+    min_arrow_magnitude: float = 6.0,
+    frame_alpha: float = 1.0,
+    hsv_alpha: float = 0.0,
+    arrow_alpha: float = 0.95,
+    show_heatmap: bool = False,
 ) -> np.ndarray:
     """
-    Render a hybrid optical-flow diagnostic layer.
+    Render a clean optical-flow diagnostic frame.
 
-    The dense layer encodes flow direction as HSV hue and robustly normalized
-    speed as HSV value. The sparse layer draws green arrows only at sampled
-    locations whose velocity exceeds the adaptive high-motion threshold.
+    By default the output preserves the source frame and overlays only sparse,
+    locally averaged vectors from high-motion regions. The optional HSV layer is
+    retained for research diagnostics but disabled for the live stream because it
+    can obscure semantic image content.
     """
     if frame is None or frame.size == 0:
         raise ValueError("Frame must be a non-empty BGR image")
@@ -147,21 +170,11 @@ def render_academic_flow_visualization(
     source_frame = np.ascontiguousarray(frame, dtype=np.uint8)
     flow = _flow_tensor_to_numpy(flow_tensor)
     flow = _resize_flow_to_frame(flow, source_frame.shape[:2])
-    flow = cv2.GaussianBlur(flow, (0, 0), sigmaX=1.15, sigmaY=1.15)
+    flow = cv2.GaussianBlur(flow, (0, 0), sigmaX=1.8, sigmaY=1.8)
 
     u = flow[..., 0]
     v = flow[..., 1]
     magnitude, angle = cv2.cartToPolar(u, v, angleInDegrees=True)
-
-    hsv = np.zeros(source_frame.shape, dtype=np.uint8)
-    hsv[..., 0] = np.mod(angle / 2.0, 180.0).astype(np.uint8)
-    hsv[..., 1] = 205
-    hsv[..., 2] = _robust_value_channel(
-        magnitude,
-        activation_percentile=activation_percentile,
-        saturation_percentile=saturation_percentile,
-    )
-    dense_bgr = cv2.cvtColor(hsv, cv2.COLOR_HSV2BGR)
 
     moving = magnitude[magnitude > 1e-6]
     if moving.size == 0:
@@ -179,6 +192,19 @@ def render_academic_flow_visualization(
         sample_step,
     )
 
-    base = cv2.addWeighted(source_frame, frame_alpha, dense_bgr, hsv_alpha, 0.0)
+    if show_heatmap:
+        hsv = np.zeros(source_frame.shape, dtype=np.uint8)
+        hsv[..., 0] = np.mod(angle / 2.0, 180.0).astype(np.uint8)
+        hsv[..., 1] = 180
+        hsv[..., 2] = _robust_value_channel(
+            magnitude,
+            activation_percentile=activation_percentile,
+            saturation_percentile=saturation_percentile,
+        )
+        dense_bgr = cv2.cvtColor(hsv, cv2.COLOR_HSV2BGR)
+        base = cv2.addWeighted(source_frame, frame_alpha, dense_bgr, hsv_alpha, 0.0)
+    else:
+        base = source_frame
+
     composite = cv2.addWeighted(base, 1.0, arrow_layer, arrow_alpha, 0.0)
     return np.clip(composite, 0, 255).astype(np.uint8)

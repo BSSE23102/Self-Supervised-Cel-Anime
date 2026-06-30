@@ -27,14 +27,17 @@ class RaftRuntime:
     functional: Any
 
 
-def _infer_flow_with_opencv(edge_a: np.ndarray, edge_b: np.ndarray) -> np.ndarray:
-    frame_a = np.squeeze(edge_a).astype("uint8")
-    frame_b = np.squeeze(edge_b).astype("uint8")
+def _infer_flow_with_opencv(frame_a_input: np.ndarray, frame_b_input: np.ndarray) -> np.ndarray:
+    frame_a = np.squeeze(frame_a_input).astype("uint8")
+    frame_b = np.squeeze(frame_b_input).astype("uint8")
 
     if frame_a.ndim != 2 or frame_b.ndim != 2:
-        raise ValueError("Optical flow fallback expects 2D edge maps")
+        raise ValueError("Optical flow fallback expects 2D motion frames")
     if frame_a.shape != frame_b.shape:
-        raise ValueError("Edge map pair shape mismatch")
+        raise ValueError("Motion frame pair shape mismatch")
+
+    frame_a = cv2.GaussianBlur(frame_a, (5, 5), sigmaX=0.0)
+    frame_b = cv2.GaussianBlur(frame_b, (5, 5), sigmaX=0.0)
 
     height, width = frame_a.shape
     work_width = max(width // 2, 64)
@@ -118,17 +121,17 @@ def load_model() -> RaftRuntime | None:
         return None
 
 
-def _prepare_input(edge_a: np.ndarray, edge_b: np.ndarray, runtime: RaftRuntime):
+def _prepare_input(frame_a: np.ndarray, frame_b: np.ndarray, runtime: RaftRuntime):
     torch = runtime.torch
     functional = runtime.functional
 
-    tensor_a = torch.as_tensor(edge_a, dtype=torch.float32, device=runtime.device)
-    tensor_b = torch.as_tensor(edge_b, dtype=torch.float32, device=runtime.device)
+    tensor_a = torch.as_tensor(frame_a, dtype=torch.float32, device=runtime.device)
+    tensor_b = torch.as_tensor(frame_b, dtype=torch.float32, device=runtime.device)
 
     if tensor_a.ndim != 2 or tensor_b.ndim != 2:
-        raise ValueError("RAFT input expects 2D edge maps")
+        raise ValueError("RAFT input expects 2D motion frames")
     if tensor_a.shape != tensor_b.shape:
-        raise ValueError("Edge map pair shape mismatch")
+        raise ValueError("Motion frame pair shape mismatch")
 
     tensor_a = tensor_a / 255.0 if tensor_a.max() > 1.0 else tensor_a
     tensor_b = tensor_b / 255.0 if tensor_b.max() > 1.0 else tensor_b
@@ -145,13 +148,13 @@ def _prepare_input(edge_a: np.ndarray, edge_b: np.ndarray, runtime: RaftRuntime)
     return tensor_a.unsqueeze(0), tensor_b.unsqueeze(0), height, width
 
 
-def infer_flow(edge_a: np.ndarray, edge_b: np.ndarray) -> np.ndarray:
+def infer_flow(frame_a: np.ndarray, frame_b: np.ndarray) -> np.ndarray:
     runtime = load_model()
     if runtime is None:
-        return _infer_flow_with_opencv(edge_a, edge_b)
+        return _infer_flow_with_opencv(frame_a, frame_b)
 
     try:
-        image1, image2, height, width = _prepare_input(edge_a, edge_b, runtime)
+        image1, image2, height, width = _prepare_input(frame_a, frame_b, runtime)
         with runtime.torch.no_grad():
             with MODEL_LOCK:
                 flow_predictions = runtime.model(image1, image2)
@@ -160,4 +163,4 @@ def infer_flow(edge_a: np.ndarray, edge_b: np.ndarray) -> np.ndarray:
         return flow[:height, :width]
     except (OSError, RuntimeError, ValueError) as exc:
         LOGGER.warning("RAFT inference failed; using OpenCV optical flow: %s", exc)
-        return _infer_flow_with_opencv(edge_a, edge_b)
+        return _infer_flow_with_opencv(frame_a, frame_b)

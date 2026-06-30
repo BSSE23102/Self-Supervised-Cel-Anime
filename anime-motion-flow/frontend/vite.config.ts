@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
-  cacheDir: 'C:/tmp/anime-motion-flow-vite-cache-react',
+  cacheDir: 'vite-cache',
   plugins: [react(), tailwindcss()],
   server: {
     host: '127.0.0.1',

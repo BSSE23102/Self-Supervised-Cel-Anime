@@ -1,0 +1,3080 @@
+[
+  {
+    "frame": 2,
+    "timestamp": 0.06666666666666667,
+    "direction": "down",
+    "avg_velocity": 12.41604995727539
+  },
+  {
+    "frame": 3,
+    "timestamp": 0.1,
+    "direction": "static",
+    "avg_velocity": 0.0
+  },
+  {
+    "frame": 4,
+    "timestamp": 0.13333333333333333,
+    "direction": "down",
+    "avg_velocity": 9.342195510864258
+  },
+  {
+    "frame": 5,
+    "timestamp": 0.16666666666666666,
+    "direction": "down",
+    "avg_velocity": 7.902859210968018
+  },
+  {
+    "frame": 6,
+    "timestamp": 0.2,
+    "direction": "down",
+    "avg_velocity": 4.626455307006836
+  },
+  {
+    "frame": 7,
+    "timestamp": 0.23333333333333334,
+    "direction": "down",
+    "avg_velocity": 3.2190234661102295
+  },
+  {
+    "frame": 8,
+    "timestamp": 0.26666666666666666,
+    "direction": "static",
+    "avg_velocity": 0.0
+  },
+  {
+    "frame": 9,
+    "timestamp": 0.3,
+    "direction": "down",
+    "avg_velocity": 5.924052715301514
+  },
+  {
+    "frame": 10,
+    "timestamp": 0.3333333333333333,
+    "direction": "static",
+    "avg_velocity": 0.0
+  },
+  {
+    "frame": 11,
+    "timestamp": 0.36666666666666664,
+    "direction": "up",
+    "avg_velocity": 5.579948902130127
+  },
+  {
+    "frame": 12,
+    "timestamp": 0.4,
+    "direction": "right",
+    "avg_velocity": 2.8512537479400635
+  },
+  {
+    "frame": 13,
+    "timestamp": 0.43333333333333335,
+    "direction": "static",
+    "avg_velocity": 0.0
+  },
+  {
+    "frame": 14,
+    "timestamp": 0.4666666666666667,
+    "direction": "right",
+    "avg_velocity": 4.248494625091553
+  },
+  {
+    "frame": 15,
+    "timestamp": 0.5,
+    "direction": "right",
+    "avg_velocity": 3.682492971420288
+  },
+  {
+    "frame": 16,
+    "timestamp": 0.5333333333333333,
+    "direction": "right",
+    "avg_velocity": 5.41461181640625
+  },
+  {
+    "frame": 17,
+    "timestamp": 0.5666666666666667,
+    "direction": "right",
+    "avg_velocity": 5.059604167938232
+  },
+  {
+    "frame": 18,
+    "timestamp": 0.6,
+    "direction": "static",
+    "avg_velocity": 0.0
+  },
+  {
+    "frame": 19,
+    "timestamp": 0.6333333333333333,
+    "direction": "right",
+    "avg_velocity": 21.77342414855957
+  },
+  {
+    "frame": 20,
+    "timestamp": 0.6666666666666666,
+    "direction": "right",
+    "avg_velocity": 16.954185485839844
+  },
+  {
+    "frame": 21,
+    "timestamp": 0.7,
+    "direction": "up",
+    "avg_velocity": 9.991064071655273
+  },
+  {
+    "frame": 22,
+    "timestamp": 0.7333333333333333,
+    "direction": "left",
+    "avg_velocity": 8.330151557922363
+  },
+  {
+    "frame": 23,
+    "timestamp": 0.7666666666666667,
+    "direction": "static",
+    "avg_velocity": 0.0
+  },
+  {
+    "frame": 24,
+    "timestamp": 0.8,
+    "direction": "left",
+    "avg_velocity": 24.927831649780273
+  },
+  {
+    "frame": 25,
+    "timestamp": 0.8333333333333334,
+    "direction": "down",
+    "avg_velocity": 25.653425216674805
+  },
+  {
+    "frame": 26,
+    "timestamp": 0.8666666666666667,
+    "direction": "left",
+    "avg_velocity": 10.60579776763916
+  },
+  {
+    "frame": 27,
+    "timestamp": 0.9,
+    "direction": "left",
+    "avg_velocity": 5.7285308837890625
+  },
+  {
+    "frame": 28,
+    "timestamp": 0.9333333333333333,
+    "direction": "static",
+    "avg_velocity": 0.0
+  },
+  {
+    "frame": 29,
+    "timestamp": 0.9666666666666667,
+    "direction": "left",
+    "avg_velocity": 5.966580867767334
+  },
+  {
+    "frame": 30,
+    "timestamp": 1.0,
+    "direction": "up",
+    "avg_velocity": 6.980670928955078
+  },
+  {
+    "frame": 31,
+    "timestamp": 1.0333333333333334,
+    "direction": "up",
+    "avg_velocity": 7.217295169830322
+  },
+  {
+    "frame": 32,
+    "timestamp": 1.0666666666666667,
+    "direction": "up",
+    "avg_velocity": 8.30228042602539
+  },
+  {
+    "frame": 33,
+    "timestamp": 1.1,
+    "direction": "static",
+    "avg_velocity": 0.0
+  },
+  {
+    "frame": 34,
+    "timestamp": 1.1333333333333333,
+    "direction": "up",
+    "avg_velocity": 7.462369918823242
+  },
+  {
+    "frame": 35,
+    "timestamp": 1.1666666666666667,
+    "direction": "right",
+    "avg_velocity": 7.634074687957764
+  },
+  {
+    "frame": 36,
+    "timestamp": 1.2,
+    "direction": "right",
+    "avg_velocity": 7.6420793533325195
+  },
+  {
+    "frame": 37,
+    "timestamp": 1.2333333333333334,
+    "direction": "right",
+    "avg_velocity": 6.63185453414917
+  },
+  {
+    "frame": 38,
+    "timestamp": 1.2666666666666666,
+    "direction": "static",
+    "avg_velocity": 0.0
+  },
+  {
+    "frame": 39,
+    "timestamp": 1.3,
+    "direction": "right",
+    "avg_velocity": 5.137372016906738
+  },
+  {
+    "frame": 40,
+    "timestamp": 1.3333333333333333,
+    "direction": "down",
+    "avg_velocity": 5.760318756103516
+  },
+  {
+    "frame": 41,
+    "timestamp": 1.3666666666666667,
+    "direction": "down",
+    "avg_velocity": 2.259950637817383
+  },
+  {
+    "frame": 42,
+    "timestamp": 1.4,
+    "direction": "up",
+    "avg_velocity": 12.29355525970459
+  },
+  {
+    "frame": 43,
+    "timestamp": 1.4333333333333333,
+    "direction": "static",
+    "avg_velocity": 0.0
+  },
+  {
+    "frame": 44,
+    "timestamp": 1.4666666666666666,
+    "direction": "down",
+    "avg_velocity": 5.416877746582031
+  },
+  {
+    "frame": 45,
+    "timestamp": 1.5,
+    "direction": "up",
+    "avg_velocity": 8.399569511413574
+  },
+  {
+    "frame": 46,
+    "timestamp": 1.5333333333333334,
+    "direction": "right",
+    "avg_velocity": 2.111588716506958
+  },
+  {
+    "frame": 47,
+    "timestamp": 1.5666666666666667,
+    "direction": "up",
+    "avg_velocity": 4.585763931274414
+  },
+  {
+    "frame": 48,
+    "timestamp": 1.6,
+    "direction": "static",
+    "avg_velocity": 0.0
+  },
+  {
+    "frame": 49,
+    "timestamp": 1.6333333333333333,
+    "direction": "up",
+    "avg_velocity": 2.0270729064941406
+  },
+  {
+    "frame": 50,
+    "timestamp": 1.6666666666666667,
+    "direction": "up",
+    "avg_velocity": 3.346491813659668
+  },
+  {
+    "frame": 51,
+    "timestamp": 1.7,
+    "direction": "up",
+    "avg_velocity": 3.2006092071533203
+  },
+  {
+    "frame": 52,
+    "timestamp": 1.7333333333333334,
+    "direction": "up",
+    "avg_velocity": 4.381049156188965
+  },
+  {
+    "frame": 53,
+    "timestamp": 1.7666666666666666,
+    "direction": "static",
+    "avg_velocity": 0.0
+  },
+  {
+    "frame": 54,
+    "timestamp": 1.8,
+    "direction": "up",
+    "avg_velocity": 4.379969120025635
+  },
+  {
+    "frame": 55,
+    "timestamp": 1.8333333333333333,
+    "direction": "right",
+    "avg_velocity": 5.709739685058594
+  },
+  {
+    "frame": 56,
+    "timestamp": 1.8666666666666667,
+    "direction": "right",
+    "avg_velocity": 6.1386847496032715
+  },
+  {
+    "frame": 57,
+    "timestamp": 1.9,
+    "direction": "down",
+    "avg_velocity": 6.344234943389893
+  },
+  {
+    "frame": 58,
+    "timestamp": 1.9333333333333333,
+    "direction": "static",
+    "avg_velocity": 0.0
+  },
+  {
+    "frame": 59,
+    "timestamp": 1.9666666666666666,
+    "direction": "left",
+    "avg_velocity": 6.706643104553223
+  },
+  {
+    "frame": 60,
+    "timestamp": 2.0,
+    "direction": "left",
+    "avg_velocity": 6.776849269866943
+  },
+  {
+    "frame": 61,
+    "timestamp": 2.033333333333333,
+    "direction": "up",
+    "avg_velocity": 16.591447830200195
+  },
+  {
+    "frame": 62,
+    "timestamp": 2.066666666666667,
+    "direction": "left",
+    "avg_velocity": 7.263435363769531
+  },
+  {
+    "frame": 63,
+    "timestamp": 2.1,
+    "direction": "static",
+    "avg_velocity": 0.0
+  },
+  {
+    "frame": 64,
+    "timestamp": 2.1333333333333333,
+    "direction": "left",
+    "avg_velocity": 6.346700191497803
+  },
+  {
+    "frame": 65,
+    "timestamp": 2.1666666666666665,
+    "direction": "left",
+    "avg_velocity": 7.897461891174316
+  },
+  {
+    "frame": 66,
+    "timestamp": 2.2,
+    "direction": "up",
+    "avg_velocity": 6.243009567260742
+  },
+  {
+    "frame": 67,
+    "timestamp": 2.2333333333333334,
+    "direction": "up",
+    "avg_velocity": 10.444637298583984
+  },
+  {
+    "frame": 68,
+    "timestamp": 2.2666666666666666,
+    "direction": "static",
+    "avg_velocity": 0.0
+  },
+  {
+    "frame": 69,
+    "timestamp": 2.3,
+    "direction": "up",
+    "avg_velocity": 6.289063930511475
+  },
+  {
+    "frame": 70,
+    "timestamp": 2.3333333333333335,
+    "direction": "up",
+    "avg_velocity": 12.753623962402344
+  },
+  {
+    "frame": 71,
+    "timestamp": 2.3666666666666667,
+    "direction": "up",
+    "avg_velocity": 6.312555313110352
+  },
+  {
+    "frame": 72,
+    "timestamp": 2.4,
+    "direction": "up",
+    "avg_velocity": 12.11371898651123
+  },
+  {
+    "frame": 73,
+    "timestamp": 2.433333333333333,
+    "direction": "static",
+    "avg_velocity": 0.0
+  },
+  {
+    "frame": 74,
+    "timestamp": 2.466666666666667,
+    "direction": "right",
+    "avg_velocity": 4.924339771270752
+  },
+  {
+    "frame": 75,
+    "timestamp": 2.5,
+    "direction": "right",
+    "avg_velocity": 9.849370002746582
+  },
+  {
+    "frame": 76,
+    "timestamp": 2.533333333333333,
+    "direction": "right",
+    "avg_velocity": 5.0158185958862305
+  },
+  {
+    "frame": 77,
+    "timestamp": 2.566666666666667,
+    "direction": "down",
+    "avg_velocity": 15.504327774047852
+  },
+  {
+    "frame": 78,
+    "timestamp": 2.6,
+    "direction": "static",
+    "avg_velocity": 0.0
+  },
+  {
+    "frame": 79,
+    "timestamp": 2.6333333333333333,
+    "direction": "down",
+    "avg_velocity": 25.185829162597656
+  },
+  {
+    "frame": 80,
+    "timestamp": 2.6666666666666665,
+    "direction": "down",
+    "avg_velocity": 16.503801345825195
+  },
+  {
+    "frame": 81,
+    "timestamp": 2.7,
+    "direction": "right",
+    "avg_velocity": 8.780108451843262
+  },
+  {
+    "frame": 82,
+    "timestamp": 2.7333333333333334,
+    "direction": "right",
+    "avg_velocity": 11.313547134399414
+  },
+  {
+    "frame": 83,
+    "timestamp": 2.7666666666666666,
+    "direction": "static",
+    "avg_velocity": 0.0
+  },
+  {
+    "frame": 84,
+    "timestamp": 2.8,
+    "direction": "right",
+    "avg_velocity": 9.645111083984375
+  },
+  {
+    "frame": 85,
+    "timestamp": 2.8333333333333335,
+    "direction": "right",
+    "avg_velocity": 10.922061920166016
+  },
+  {
+    "frame": 86,
+    "timestamp": 2.8666666666666667,
+    "direction": "right",
+    "avg_velocity": 8.542614936828613
+  },
+  {
+    "frame": 87,
+    "timestamp": 2.9,
+    "direction": "up",
+    "avg_velocity": 9.806694030761719
+  },
+  {
+    "frame": 88,
+    "timestamp": 2.933333333333333,
+    "direction": "static",
+    "avg_velocity": 0.0
+  },
+  {
+    "frame": 89,
+    "timestamp": 2.966666666666667,
+    "direction": "up",
+    "avg_velocity": 5.620052814483643
+  },
+  {
+    "frame": 90,
+    "timestamp": 3.0,
+    "direction": "down",
+    "avg_velocity": 6.811588764190674
+  },
+  {
+    "frame": 91,
+    "timestamp": 3.033333333333333,
+    "direction": "down",
+    "avg_velocity": 4.612590789794922
+  },
+  {
+    "frame": 92,
+    "timestamp": 3.066666666666667,
+    "direction": "down",
+    "avg_velocity": 8.198685646057129
+  },
+  {
+    "frame": 93,
+    "timestamp": 3.1,
+    "direction": "static",
+    "avg_velocity": 0.0
+  },
+  {
+    "frame": 94,
+    "timestamp": 3.1333333333333333,
+    "direction": "down",
+    "avg_velocity": 5.373489856719971
+  },
+  {
+    "frame": 95,
+    "timestamp": 3.1666666666666665,
+    "direction": "down",
+    "avg_velocity": 7.635849952697754
+  },
+  {
+    "frame": 96,
+    "timestamp": 3.2,
+    "direction": "left",
+    "avg_velocity": 9.023236274719238
+  },
+  {
+    "frame": 97,
+    "timestamp": 3.2333333333333334,
+    "direction": "left",
+    "avg_velocity": 33.952049255371094
+  },
+  {
+    "frame": 98,
+    "timestamp": 3.2666666666666666,
+    "direction": "static",
+    "avg_velocity": 0.0
+  },
+  {
+    "frame": 99,
+    "timestamp": 3.3,
+    "direction": "left",
+    "avg_velocity": 23.51578712463379
+  },
+  {
+    "frame": 100,
+    "timestamp": 3.3333333333333335,
+    "direction": "up",
+    "avg_velocity": 12.021047592163086
+  },
+  {
+    "frame": 101,
+    "timestamp": 3.3666666666666667,
+    "direction": "up",
+    "avg_velocity": 8.438823699951172
+  },
+  {
+    "frame": 102,
+    "timestamp": 3.4,
+    "direction": "right",
+    "avg_velocity": 8.807474136352539
+  },
+  {
+    "frame": 103,
+    "timestamp": 3.433333333333333,
+    "direction": "static",
+    "avg_velocity": 0.0
+  },
+  {
+    "frame": 104,
+    "timestamp": 3.466666666666667,
+    "direction": "right",
+    "avg_velocity": 7.933069705963135
+  },
+  {
+    "frame": 105,
+    "timestamp": 3.5,
+    "direction": "right",
+    "avg_velocity": 8.447251319885254
+  },
+  {
+    "frame": 106,
+    "timestamp": 3.533333333333333,
+    "direction": "right",
+    "avg_velocity": 7.378102779388428
+  },
+  {
+    "frame": 107,
+    "timestamp": 3.566666666666667,
+    "direction": "right",
+    "avg_velocity": 6.961444854736328
+  },
+  {
+    "frame": 108,
+    "timestamp": 3.6,
+    "direction": "static",
+    "avg_velocity": 0.0
+  },
+  {
+    "frame": 109,
+    "timestamp": 3.6333333333333333,
+    "direction": "right",
+    "avg_velocity": 7.23939323425293
+  },
+  {
+    "frame": 110,
+    "timestamp": 3.6666666666666665,
+    "direction": "right",
+    "avg_velocity": 5.812251567840576
+  },
+  {
+    "frame": 111,
+    "timestamp": 3.7,
+    "direction": "down",
+    "avg_velocity": 5.0519328117370605
+  },
+  {
+    "frame": 112,
+    "timestamp": 3.7333333333333334,
+    "direction": "left",
+    "avg_velocity": 22.234642028808594
+  },
+  {
+    "frame": 113,
+    "timestamp": 3.7666666666666666,
+    "direction": "static",
+    "avg_velocity": 0.0
+  },
+  {
+    "frame": 114,
+    "timestamp": 3.8,
+    "direction": "left",
+    "avg_velocity": 22.48221778869629
+  },
+  {
+    "frame": 115,
+    "timestamp": 3.8333333333333335,
+    "direction": "right",
+    "avg_velocity": 15.575774192810059
+  },
+  {
+    "frame": 116,
+    "timestamp": 3.8666666666666667,
+    "direction": "left",
+    "avg_velocity": 20.88968849182129
+  },
+  {
+    "frame": 117,
+    "timestamp": 3.9,
+    "direction": "left",
+    "avg_velocity": 16.93100357055664
+  },
+  {
+    "frame": 118,
+    "timestamp": 3.933333333333333,
+    "direction": "static",
+    "avg_velocity": 0.0
+  },
+  {
+    "frame": 119,
+    "timestamp": 3.966666666666667,
+    "direction": "left",
+    "avg_velocity": 20.781038284301758
+  },
+  {
+    "frame": 120,
+    "timestamp": 4.0,
+    "direction": "left",
+    "avg_velocity": 11.734932899475098
+  },
+  {
+    "frame": 121,
+    "timestamp": 4.033333333333333,
+    "direction": "up",
+    "avg_velocity": 7.805718421936035
+  },
+  {
+    "frame": 122,
+    "timestamp": 4.066666666666666,
+    "direction": "up",
+    "avg_velocity": 7.158867359161377
+  },
+  {
+    "frame": 123,
+    "timestamp": 4.1,
+    "direction": "static",
+    "avg_velocity": 0.0
+  },
+  {
+    "frame": 124,
+    "timestamp": 4.133333333333334,
+    "direction": "up",
+    "avg_velocity": 7.7177839279174805
+  },
+  {
+    "frame": 125,
+    "timestamp": 4.166666666666667,
+    "direction": "left",
+    "avg_velocity": 5.523563385009766
+  },
+  {
+    "frame": 126,
+    "timestamp": 4.2,
+    "direction": "left",
+    "avg_velocity": 24.762426376342773
+  },
+  {
+    "frame": 127,
+    "timestamp": 4.233333333333333,
+    "direction": "left",
+    "avg_velocity": 18.382028579711914
+  },
+  {
+    "frame": 128,
+    "timestamp": 4.266666666666667,
+    "direction": "static",
+    "avg_velocity": 0.0
+  },
+  {
+    "frame": 129,
+    "timestamp": 4.3,
+    "direction": "right",
+    "avg_velocity": 28.58601951599121
+  },
+  {
+    "frame": 130,
+    "timestamp": 4.333333333333333,
+    "direction": "left",
+    "avg_velocity": 25.615388870239258
+  },
+  {
+    "frame": 131,
+    "timestamp": 4.366666666666666,
+    "direction": "right",
+    "avg_velocity": 24.293071746826172
+  },
+  {
+    "frame": 132,
+    "timestamp": 4.4,
+    "direction": "left",
+    "avg_velocity": 15.334479331970215
+  },
+  {
+    "frame": 133,
+    "timestamp": 4.433333333333334,
+    "direction": "static",
+    "avg_velocity": 0.0
+  },
+  {
+    "frame": 134,
+    "timestamp": 4.466666666666667,
+    "direction": "right",
+    "avg_velocity": 14.109575271606445
+  },
+  {
+    "frame": 135,
+    "timestamp": 4.5,
+    "direction": "right",
+    "avg_velocity": 12.172924041748047
+  },
+  {
+    "frame": 136,
+    "timestamp": 4.533333333333333,
+    "direction": "left",
+    "avg_velocity": 20.001201629638672
+  },
+  {
+    "frame": 137,
+    "timestamp": 4.566666666666666,
+    "direction": "left",
+    "avg_velocity": 12.909772872924805
+  },
+  {
+    "frame": 138,
+    "timestamp": 4.6,
+    "direction": "static",
+    "avg_velocity": 0.0
+  },
+  {
+    "frame": 139,
+    "timestamp": 4.633333333333334,
+    "direction": "up",
+    "avg_velocity": 24.362651824951172
+  },
+  {
+    "frame": 140,
+    "timestamp": 4.666666666666667,
+    "direction": "up",
+    "avg_velocity": 8.686972618103027
+  },
+  {
+    "frame": 141,
+    "timestamp": 4.7,
+    "direction": "up",
+    "avg_velocity": 21.4777774810791
+  },
+  {
+    "frame": 142,
+    "timestamp": 4.733333333333333,
+    "direction": "left",
+    "avg_velocity": 11.692176818847656
+  },
+  {
+    "frame": 143,
+    "timestamp": 4.766666666666667,
+    "direction": "static",
+    "avg_velocity": 0.0
+  },
+  {
+    "frame": 144,
+    "timestamp": 4.8,
+    "direction": "up",
+    "avg_velocity": 21.942790985107422
+  },
+  {
+    "frame": 145,
+    "timestamp": 4.833333333333333,
+    "direction": "left",
+    "avg_velocity": 11.052543640136719
+  },
+  {
+    "frame": 146,
+    "timestamp": 4.866666666666666,
+    "direction": "up",
+    "avg_velocity": 19.619640350341797
+  },
+  {
+    "frame": 147,
+    "timestamp": 4.9,
+    "direction": "up",
+    "avg_velocity": 16.895246505737305
+  },
+  {
+    "frame": 148,
+    "timestamp": 4.933333333333334,
+    "direction": "static",
+    "avg_velocity": 0.0
+  },
+  {
+    "frame": 149,
+    "timestamp": 4.966666666666667,
+    "direction": "down",
+    "avg_velocity": 11.993518829345703
+  },
+  {
+    "frame": 150,
+    "timestamp": 5.0,
+    "direction": "left",
+    "avg_velocity": 14.384284973144531
+  },
+  {
+    "frame": 151,
+    "timestamp": 5.033333333333333,
+    "direction": "left",
+    "avg_velocity": 11.7714204788208
+  },
+  {
+    "frame": 152,
+    "timestamp": 5.066666666666666,
+    "direction": "down",
+    "avg_velocity": 4.957234859466553
+  },
+  {
+    "frame": 153,
+    "timestamp": 5.1,
+    "direction": "static",
+    "avg_velocity": 0.0
+  },
+  {
+    "frame": 154,
+    "timestamp": 5.133333333333334,
+    "direction": "down",
+    "avg_velocity": 11.509589195251465
+  },
+  {
+    "frame": 155,
+    "timestamp": 5.166666666666667,
+    "direction": "down",
+    "avg_velocity": 4.796776294708252
+  },
+  {
+    "frame": 156,
+    "timestamp": 5.2,
+    "direction": "right",
+    "avg_velocity": 11.26564884185791
+  },
+  {
+    "frame": 157,
+    "timestamp": 5.233333333333333,
+    "direction": "up",
+    "avg_velocity": 5.91500997543335
+  },
+  {
+    "frame": 158,
+    "timestamp": 5.266666666666667,
+    "direction": "static",
+    "avg_velocity": 0.0
+  },
+  {
+    "frame": 159,
+    "timestamp": 5.3,
+    "direction": "right",
+    "avg_velocity": 8.409921646118164
+  },
+  {
+    "frame": 160,
+    "timestamp": 5.333333333333333,
+    "direction": "right",
+    "avg_velocity": 3.3801145553588867
+  },
+  {
+    "frame": 161,
+    "timestamp": 5.366666666666666,
+    "direction": "down",
+    "avg_velocity": 10.449053764343262
+  },
+  {
+    "frame": 162,
+    "timestamp": 5.4,
+    "direction": "down",
+    "avg_velocity": 3.4831011295318604
+  },
+  {
+    "frame": 163,
+    "timestamp": 5.433333333333334,
+    "direction": "static",
+    "avg_velocity": 0.0
+  },
+  {
+    "frame": 164,
+    "timestamp": 5.466666666666667,
+    "direction": "left",
+    "avg_velocity": 12.576678276062012
+  },
+  {
+    "frame": 165,
+    "timestamp": 5.5,
+    "direction": "right",
+    "avg_velocity": 21.163558959960938
+  },
+  {
+    "frame": 166,
+    "timestamp": 5.533333333333333,
+    "direction": "right",
+    "avg_velocity": 13.35116195678711
+  },
+  {
+    "frame": 167,
+    "timestamp": 5.566666666666666,
+    "direction": "right",
+    "avg_velocity": 7.619434356689453
+  },
+  {
+    "frame": 168,
+    "timestamp": 5.6,
+    "direction": "static",
+    "avg_velocity": 0.0
+  },
+  {
+    "frame": 169,
+    "timestamp": 5.633333333333334,
+    "direction": "left",
+    "avg_velocity": 18.927494049072266
+  },
+  {
+    "frame": 170,
+    "timestamp": 5.666666666666667,
+    "direction": "left",
+    "avg_velocity": 16.179214477539062
+  },
+  {
+    "frame": 171,
+    "timestamp": 5.7,
+    "direction": "down",
+    "avg_velocity": 12.473690032958984
+  },
+  {
+    "frame": 172,
+    "timestamp": 5.733333333333333,
+    "direction": "right",
+    "avg_velocity": 22.555261611938477
+  },
+  {
+    "frame": 173,
+    "timestamp": 5.766666666666667,
+    "direction": "static",
+    "avg_velocity": 0.0
+  },
+  {
+    "frame": 174,
+    "timestamp": 5.8,
+    "direction": "left",
+    "avg_velocity": 23.357175827026367
+  },
+  {
+    "frame": 175,
+    "timestamp": 5.833333333333333,
+    "direction": "right",
+    "avg_velocity": 16.177141189575195
+  },
+  {
+    "frame": 176,
+    "timestamp": 5.866666666666666,
+    "direction": "left",
+    "avg_velocity": 11.084732055664062
+  },
+  {
+    "frame": 177,
+    "timestamp": 5.9,
+    "direction": "left",
+    "avg_velocity": 9.778409957885742
+  },
+  {
+    "frame": 178,
+    "timestamp": 5.933333333333334,
+    "direction": "static",
+    "avg_velocity": 0.0
+  },
+  {
+    "frame": 179,
+    "timestamp": 5.966666666666667,
+    "direction": "up",
+    "avg_velocity": 5.5194478034973145
+  },
+  {
+    "frame": 180,
+    "timestamp": 6.0,
+    "direction": "up",
+    "avg_velocity": 2.106699228286743
+  },
+  {
+    "frame": 181,
+    "timestamp": 6.033333333333333,
+    "direction": "left",
+    "avg_velocity": 8.382828712463379
+  },
+  {
+    "frame": 182,
+    "timestamp": 6.066666666666666,
+    "direction": "left",
+    "avg_velocity": 6.489315509796143
+  },
+  {
+    "frame": 183,
+    "timestamp": 6.1,
+    "direction": "static",
+    "avg_velocity": 0.0
+  },
+  {
+    "frame": 184,
+    "timestamp": 6.133333333333334,
+    "direction": "left",
+    "avg_velocity": 7.437603950500488
+  },
+  {
+    "frame": 185,
+    "timestamp": 6.166666666666667,
+    "direction": "right",
+    "avg_velocity": 4.145988464355469
+  },
+  {
+    "frame": 186,
+    "timestamp": 6.2,
+    "direction": "right",
+    "avg_velocity": 6.363356590270996
+  },
+  {
+    "frame": 187,
+    "timestamp": 6.233333333333333,
+    "direction": "right",
+    "avg_velocity": 5.024028301239014
+  },
+  {
+    "frame": 188,
+    "timestamp": 6.266666666666667,
+    "direction": "static",
+    "avg_velocity": 0.0
+  },
+  {
+    "frame": 189,
+    "timestamp": 6.3,
+    "direction": "left",
+    "avg_velocity": 7.434167861938477
+  },
+  {
+    "frame": 190,
+    "timestamp": 6.333333333333333,
+    "direction": "static",
+    "avg_velocity": 0.0
+  },
+  {
+    "frame": 191,
+    "timestamp": 6.366666666666666,
+    "direction": "down",
+    "avg_velocity": 7.871837139129639
+  },
+  {
+    "frame": 192,
+    "timestamp": 6.4,
+    "direction": "down",
+    "avg_velocity": 3.956861972808838
+  },
+  {
+    "frame": 193,
+    "timestamp": 6.433333333333334,
+    "direction": "static",
+    "avg_velocity": 0.0
+  },
+  {
+    "frame": 194,
+    "timestamp": 6.466666666666667,
+    "direction": "down",
+    "avg_velocity": 8.070304870605469
+  },
+  {
+    "frame": 195,
+    "timestamp": 6.5,
+    "direction": "down",
+    "avg_velocity": 3.563260793685913
+  },
+  {
+    "frame": 196,
+    "timestamp": 6.533333333333333,
+    "direction": "down",
+    "avg_velocity": 6.560492515563965
+  },
+  {
+    "frame": 197,
+    "timestamp": 6.566666666666666,
+    "direction": "down",
+    "avg_velocity": 3.4454827308654785
+  },
+  {
+    "frame": 198,
+    "timestamp": 6.6,
+    "direction": "static",
+    "avg_velocity": 0.0
+  },
+  {
+    "frame": 199,
+    "timestamp": 6.633333333333334,
+    "direction": "down",
+    "avg_velocity": 9.628008842468262
+  },
+  {
+    "frame": 200,
+    "timestamp": 6.666666666666667,
+    "direction": "left",
+    "avg_velocity": 3.507982015609741
+  },
+  {
+    "frame": 201,
+    "timestamp": 6.7,
+    "direction": "left",
+    "avg_velocity": 5.584402084350586
+  },
+  {
+    "frame": 202,
+    "timestamp": 6.733333333333333,
+    "direction": "left",
+    "avg_velocity": 2.493664503097534
+  },
+  {
+    "frame": 203,
+    "timestamp": 6.766666666666667,
+    "direction": "static",
+    "avg_velocity": 0.0
+  },
+  {
+    "frame": 204,
+    "timestamp": 6.8,
+    "direction": "up",
+    "avg_velocity": 3.088705539703369
+  },
+  {
+    "frame": 205,
+    "timestamp": 6.833333333333333,
+    "direction": "up",
+    "avg_velocity": 2.3722994327545166
+  },
+  {
+    "frame": 206,
+    "timestamp": 6.866666666666666,
+    "direction": "up",
+    "avg_velocity": 2.8919687271118164
+  },
+  {
+    "frame": 207,
+    "timestamp": 6.9,
+    "direction": "up",
+    "avg_velocity": 2.097069263458252
+  },
+  {
+    "frame": 208,
+    "timestamp": 6.933333333333334,
+    "direction": "static",
+    "avg_velocity": 0.0
+  },
+  {
+    "frame": 209,
+    "timestamp": 6.966666666666667,
+    "direction": "up",
+    "avg_velocity": 2.068124294281006
+  },
+  {
+    "frame": 210,
+    "timestamp": 7.0,
+    "direction": "right",
+    "avg_velocity": 3.3125312328338623
+  },
+  {
+    "frame": 211,
+    "timestamp": 7.033333333333333,
+    "direction": "right",
+    "avg_velocity": 2.023510456085205
+  },
+  {
+    "frame": 212,
+    "timestamp": 7.066666666666666,
+    "direction": "right",
+    "avg_velocity": 2.0216832160949707
+  },
+  {
+    "frame": 213,
+    "timestamp": 7.1,
+    "direction": "static",
+    "avg_velocity": 0.0
+  },
+  {
+    "frame": 214,
+    "timestamp": 7.133333333333334,
+    "direction": "right",
+    "avg_velocity": 4.925436973571777
+  },
+  {
+    "frame": 215,
+    "timestamp": 7.166666666666667,
+    "direction": "static",
+    "avg_velocity": 0.0
+  },
+  {
+    "frame": 216,
+    "timestamp": 7.2,
+    "direction": "static",
+    "avg_velocity": 0.0
+  },
+  {
+    "frame": 217,
+    "timestamp": 7.233333333333333,
+    "direction": "left",
+    "avg_velocity": 12.1480131149292
+  },
+  {
+    "frame": 218,
+    "timestamp": 7.266666666666667,
+    "direction": "static",
+    "avg_velocity": 0.0
+  },
+  {
+    "frame": 219,
+    "timestamp": 7.3,
+    "direction": "down",
+    "avg_velocity": 9.25767993927002
+  },
+  {
+    "frame": 220,
+    "timestamp": 7.333333333333333,
+    "direction": "up",
+    "avg_velocity": 30.669233322143555
+  },
+  {
+    "frame": 221,
+    "timestamp": 7.366666666666666,
+    "direction": "up",
+    "avg_velocity": 14.730936050415039
+  },
+  {
+    "frame": 222,
+    "timestamp": 7.4,
+    "direction": "up",
+    "avg_velocity": 16.482177734375
+  },
+  {
+    "frame": 223,
+    "timestamp": 7.433333333333334,
+    "direction": "static",
+    "avg_velocity": 0.0
+  },
+  {
+    "frame": 224,
+    "timestamp": 7.466666666666667,
+    "direction": "up",
+    "avg_velocity": 12.388884544372559
+  },
+  {
+    "frame": 225,
+    "timestamp": 7.5,
+    "direction": "up",
+    "avg_velocity": 13.618298530578613
+  },
+  {
+    "frame": 226,
+    "timestamp": 7.533333333333333,
+    "direction": "up",
+    "avg_velocity": 10.300341606140137
+  },
+  {
+    "frame": 227,
+    "timestamp": 7.566666666666666,
+    "direction": "up",
+    "avg_velocity": 10.859169960021973
+  },
+  {
+    "frame": 228,
+    "timestamp": 7.6,
+    "direction": "static",
+    "avg_velocity": 0.0
+  },
+  {
+    "frame": 229,
+    "timestamp": 7.633333333333334,
+    "direction": "up",
+    "avg_velocity": 8.930006980895996
+  },
+  {
+    "frame": 230,
+    "timestamp": 7.666666666666667,
+    "direction": "up",
+    "avg_velocity": 9.11008071899414
+  },
+  {
+    "frame": 231,
+    "timestamp": 7.7,
+    "direction": "up",
+    "avg_velocity": 9.657999992370605
+  },
+  {
+    "frame": 232,
+    "timestamp": 7.733333333333333,
+    "direction": "static",
+    "avg_velocity": 0.0
+  },
+  {
+    "frame": 233,
+    "timestamp": 7.766666666666667,
+    "direction": "up",
+    "avg_velocity": 14.914856910705566
+  },
+  {
+    "frame": 234,
+    "timestamp": 7.8,
+    "direction": "up",
+    "avg_velocity": 14.494091033935547
+  },
+  {
+    "frame": 235,
+    "timestamp": 7.833333333333333,
+    "direction": "up",
+    "avg_velocity": 17.208322525024414
+  },
+  {
+    "frame": 236,
+    "timestamp": 7.866666666666666,
+    "direction": "up",
+    "avg_velocity": 14.404419898986816
+  },
+  {
+    "frame": 237,
+    "timestamp": 7.9,
+    "direction": "static",
+    "avg_velocity": 0.0
+  },
+  {
+    "frame": 238,
+    "timestamp": 7.933333333333334,
+    "direction": "right",
+    "avg_velocity": 3.3253445625305176
+  },
+  {
+    "frame": 239,
+    "timestamp": 7.966666666666667,
+    "direction": "down",
+    "avg_velocity": 3.051018238067627
+  },
+  {
+    "frame": 240,
+    "timestamp": 8.0,
+    "direction": "down",
+    "avg_velocity": 5.4042205810546875
+  },
+  {
+    "frame": 241,
+    "timestamp": 8.033333333333333,
+    "direction": "left",
+    "avg_velocity": 7.041638374328613
+  },
+  {
+    "frame": 242,
+    "timestamp": 8.066666666666666,
+    "direction": "static",
+    "avg_velocity": 0.0
+  },
+  {
+    "frame": 243,
+    "timestamp": 8.1,
+    "direction": "left",
+    "avg_velocity": 6.88168478012085
+  },
+  {
+    "frame": 244,
+    "timestamp": 8.133333333333333,
+    "direction": "left",
+    "avg_velocity": 4.791861057281494
+  },
+  {
+    "frame": 245,
+    "timestamp": 8.166666666666666,
+    "direction": "left",
+    "avg_velocity": 9.28658676147461
+  },
+  {
+    "frame": 246,
+    "timestamp": 8.2,
+    "direction": "left",
+    "avg_velocity": 19.07364273071289
+  },
+  {
+    "frame": 247,
+    "timestamp": 8.233333333333333,
+    "direction": "static",
+    "avg_velocity": 0.0
+  },
+  {
+    "frame": 248,
+    "timestamp": 8.266666666666667,
+    "direction": "up",
+    "avg_velocity": 17.537750244140625
+  },
+  {
+    "frame": 249,
+    "timestamp": 8.3,
+    "direction": "up",
+    "avg_velocity": 9.558903694152832
+  },
+  {
+    "frame": 250,
+    "timestamp": 8.333333333333334,
+    "direction": "left",
+    "avg_velocity": 16.77130126953125
+  },
+  {
+    "frame": 251,
+    "timestamp": 8.366666666666667,
+    "direction": "left",
+    "avg_velocity": 20.529125213623047
+  },
+  {
+    "frame": 252,
+    "timestamp": 8.4,
+    "direction": "static",
+    "avg_velocity": 0.0
+  },
+  {
+    "frame": 253,
+    "timestamp": 8.433333333333334,
+    "direction": "left",
+    "avg_velocity": 33.20474624633789
+  },
+  {
+    "frame": 254,
+    "timestamp": 8.466666666666667,
+    "direction": "left",
+    "avg_velocity": 23.633769989013672
+  },
+  {
+    "frame": 255,
+    "timestamp": 8.5,
+    "direction": "left",
+    "avg_velocity": 22.978368759155273
+  },
+  {
+    "frame": 256,
+    "timestamp": 8.533333333333333,
+    "direction": "left",
+    "avg_velocity": 22.48970603942871
+  },
+  {
+    "frame": 257,
+    "timestamp": 8.566666666666666,
+    "direction": "static",
+    "avg_velocity": 0.0
+  },
+  {
+    "frame": 258,
+    "timestamp": 8.6,
+    "direction": "left",
+    "avg_velocity": 21.991207122802734
+  },
+  {
+    "frame": 259,
+    "timestamp": 8.633333333333333,
+    "direction": "left",
+    "avg_velocity": 18.560230255126953
+  },
+  {
+    "frame": 260,
+    "timestamp": 8.666666666666666,
+    "direction": "left",
+    "avg_velocity": 14.923667907714844
+  },
+  {
+    "frame": 261,
+    "timestamp": 8.7,
+    "direction": "left",
+    "avg_velocity": 10.368868827819824
+  },
+  {
+    "frame": 262,
+    "timestamp": 8.733333333333333,
+    "direction": "static",
+    "avg_velocity": 0.0
+  },
+  {
+    "frame": 263,
+    "timestamp": 8.766666666666667,
+    "direction": "left",
+    "avg_velocity": 9.249324798583984
+  },
+  {
+    "frame": 264,
+    "timestamp": 8.8,
+    "direction": "down",
+    "avg_velocity": 8.297226905822754
+  },
+  {
+    "frame": 265,
+    "timestamp": 8.833333333333334,
+    "direction": "down",
+    "avg_velocity": 9.763359069824219
+  },
+  {
+    "frame": 266,
+    "timestamp": 8.866666666666667,
+    "direction": "down",
+    "avg_velocity": 7.47930908203125
+  },
+  {
+    "frame": 267,
+    "timestamp": 8.9,
+    "direction": "static",
+    "avg_velocity": 0.0
+  },
+  {
+    "frame": 268,
+    "timestamp": 8.933333333333334,
+    "direction": "down",
+    "avg_velocity": 7.705765724182129
+  },
+  {
+    "frame": 269,
+    "timestamp": 8.966666666666667,
+    "direction": "right",
+    "avg_velocity": 5.120386600494385
+  },
+  {
+    "frame": 270,
+    "timestamp": 9.0,
+    "direction": "right",
+    "avg_velocity": 4.619294166564941
+  },
+  {
+    "frame": 271,
+    "timestamp": 9.033333333333333,
+    "direction": "up",
+    "avg_velocity": 3.7545838356018066
+  },
+  {
+    "frame": 272,
+    "timestamp": 9.066666666666666,
+    "direction": "static",
+    "avg_velocity": 0.0
+  },
+  {
+    "frame": 273,
+    "timestamp": 9.1,
+    "direction": "up",
+    "avg_velocity": 3.9544570446014404
+  },
+  {
+    "frame": 274,
+    "timestamp": 9.133333333333333,
+    "direction": "up",
+    "avg_velocity": 4.504677772521973
+  },
+  {
+    "frame": 275,
+    "timestamp": 9.166666666666666,
+    "direction": "left",
+    "avg_velocity": 5.026731491088867
+  },
+  {
+    "frame": 276,
+    "timestamp": 9.2,
+    "direction": "left",
+    "avg_velocity": 5.13931131362915
+  },
+  {
+    "frame": 277,
+    "timestamp": 9.233333333333333,
+    "direction": "static",
+    "avg_velocity": 0.0
+  },
+  {
+    "frame": 278,
+    "timestamp": 9.266666666666667,
+    "direction": "up",
+    "avg_velocity": 15.609046936035156
+  },
+  {
+    "frame": 279,
+    "timestamp": 9.3,
+    "direction": "left",
+    "avg_velocity": 17.49175453186035
+  },
+  {
+    "frame": 280,
+    "timestamp": 9.333333333333334,
+    "direction": "right",
+    "avg_velocity": 22.743000030517578
+  },
+  {
+    "frame": 281,
+    "timestamp": 9.366666666666667,
+    "direction": "right",
+    "avg_velocity": 18.47682762145996
+  },
+  {
+    "frame": 282,
+    "timestamp": 9.4,
+    "direction": "static",
+    "avg_velocity": 0.0
+  },
+  {
+    "frame": 283,
+    "timestamp": 9.433333333333334,
+    "direction": "down",
+    "avg_velocity": 18.13237762451172
+  },
+  {
+    "frame": 284,
+    "timestamp": 9.466666666666667,
+    "direction": "left",
+    "avg_velocity": 14.23255729675293
+  },
+  {
+    "frame": 285,
+    "timestamp": 9.5,
+    "direction": "left",
+    "avg_velocity": 14.103341102600098
+  },
+  {
+    "frame": 286,
+    "timestamp": 9.533333333333333,
+    "direction": "left",
+    "avg_velocity": 10.889822006225586
+  },
+  {
+    "frame": 287,
+    "timestamp": 9.566666666666666,
+    "direction": "static",
+    "avg_velocity": 0.0
+  },
+  {
+    "frame": 288,
+    "timestamp": 9.6,
+    "direction": "down",
+    "avg_velocity": 11.21744155883789
+  },
+  {
+    "frame": 289,
+    "timestamp": 9.633333333333333,
+    "direction": "right",
+    "avg_velocity": 11.904006958007812
+  },
+  {
+    "frame": 290,
+    "timestamp": 9.666666666666666,
+    "direction": "right",
+    "avg_velocity": 6.441490173339844
+  },
+  {
+    "frame": 291,
+    "timestamp": 9.7,
+    "direction": "left",
+    "avg_velocity": 9.755892753601074
+  },
+  {
+    "frame": 292,
+    "timestamp": 9.733333333333333,
+    "direction": "static",
+    "avg_velocity": 0.0
+  },
+  {
+    "frame": 293,
+    "timestamp": 9.766666666666667,
+    "direction": "left",
+    "avg_velocity": 9.651028633117676
+  },
+  {
+    "frame": 294,
+    "timestamp": 9.8,
+    "direction": "left",
+    "avg_velocity": 5.8350443840026855
+  },
+  {
+    "frame": 295,
+    "timestamp": 9.833333333333334,
+    "direction": "left",
+    "avg_velocity": 6.1062517166137695
+  },
+  {
+    "frame": 296,
+    "timestamp": 9.866666666666667,
+    "direction": "left",
+    "avg_velocity": 6.061917304992676
+  },
+  {
+    "frame": 297,
+    "timestamp": 9.9,
+    "direction": "static",
+    "avg_velocity": 0.0
+  },
+  {
+    "frame": 298,
+    "timestamp": 9.933333333333334,
+    "direction": "down",
+    "avg_velocity": 5.314655780792236
+  },
+  {
+    "frame": 299,
+    "timestamp": 9.966666666666667,
+    "direction": "right",
+    "avg_velocity": 6.138122081756592
+  },
+  {
+    "frame": 300,
+    "timestamp": 10.0,
+    "direction": "right",
+    "avg_velocity": 2.4481608867645264
+  },
+  {
+    "frame": 301,
+    "timestamp": 10.033333333333333,
+    "direction": "right",
+    "avg_velocity": 5.100039005279541
+  },
+  {
+    "frame": 302,
+    "timestamp": 10.066666666666666,
+    "direction": "static",
+    "avg_velocity": 0.0
+  },
+  {
+    "frame": 303,
+    "timestamp": 10.1,
+    "direction": "right",
+    "avg_velocity": 4.416963577270508
+  },
+  {
+    "frame": 304,
+    "timestamp": 10.133333333333333,
+    "direction": "right",
+    "avg_velocity": 8.372008323669434
+  },
+  {
+    "frame": 305,
+    "timestamp": 10.166666666666666,
+    "direction": "right",
+    "avg_velocity": 5.448655605316162
+  },
+  {
+    "frame": 306,
+    "timestamp": 10.2,
+    "direction": "right",
+    "avg_velocity": 6.621172904968262
+  },
+  {
+    "frame": 307,
+    "timestamp": 10.233333333333333,
+    "direction": "static",
+    "avg_velocity": 0.0
+  },
+  {
+    "frame": 308,
+    "timestamp": 10.266666666666667,
+    "direction": "right",
+    "avg_velocity": 5.9570441246032715
+  },
+  {
+    "frame": 309,
+    "timestamp": 10.3,
+    "direction": "right",
+    "avg_velocity": 11.917228698730469
+  },
+  {
+    "frame": 310,
+    "timestamp": 10.333333333333334,
+    "direction": "up",
+    "avg_velocity": 5.844400405883789
+  },
+  {
+    "frame": 311,
+    "timestamp": 10.366666666666667,
+    "direction": "up",
+    "avg_velocity": 7.8061017990112305
+  },
+  {
+    "frame": 312,
+    "timestamp": 10.4,
+    "direction": "static",
+    "avg_velocity": 0.0
+  },
+  {
+    "frame": 313,
+    "timestamp": 10.433333333333334,
+    "direction": "up",
+    "avg_velocity": 4.651607036590576
+  },
+  {
+    "frame": 314,
+    "timestamp": 10.466666666666667,
+    "direction": "up",
+    "avg_velocity": 6.344329357147217
+  },
+  {
+    "frame": 315,
+    "timestamp": 10.5,
+    "direction": "up",
+    "avg_velocity": 2.1205945014953613
+  },
+  {
+    "frame": 316,
+    "timestamp": 10.533333333333333,
+    "direction": "left",
+    "avg_velocity": 11.015111923217773
+  },
+  {
+    "frame": 317,
+    "timestamp": 10.566666666666666,
+    "direction": "static",
+    "avg_velocity": 0.0
+  },
+  {
+    "frame": 318,
+    "timestamp": 10.6,
+    "direction": "left",
+    "avg_velocity": 2.875535249710083
+  },
+  {
+    "frame": 319,
+    "timestamp": 10.633333333333333,
+    "direction": "left",
+    "avg_velocity": 2.5641462802886963
+  },
+  {
+    "frame": 320,
+    "timestamp": 10.666666666666666,
+    "direction": "left",
+    "avg_velocity": 6.49172830581665
+  },
+  {
+    "frame": 321,
+    "timestamp": 10.7,
+    "direction": "left",
+    "avg_velocity": 3.6580348014831543
+  },
+  {
+    "frame": 322,
+    "timestamp": 10.733333333333333,
+    "direction": "static",
+    "avg_velocity": 0.0
+  },
+  {
+    "frame": 323,
+    "timestamp": 10.766666666666667,
+    "direction": "left",
+    "avg_velocity": 2.9769060611724854
+  },
+  {
+    "frame": 324,
+    "timestamp": 10.8,
+    "direction": "left",
+    "avg_velocity": 4.524877071380615
+  },
+  {
+    "frame": 325,
+    "timestamp": 10.833333333333334,
+    "direction": "left",
+    "avg_velocity": 4.459763050079346
+  },
+  {
+    "frame": 326,
+    "timestamp": 10.866666666666667,
+    "direction": "left",
+    "avg_velocity": 2.8424999713897705
+  },
+  {
+    "frame": 327,
+    "timestamp": 10.9,
+    "direction": "static",
+    "avg_velocity": 0.0
+  },
+  {
+    "frame": 328,
+    "timestamp": 10.933333333333334,
+    "direction": "left",
+    "avg_velocity": 5.322534084320068
+  },
+  {
+    "frame": 329,
+    "timestamp": 10.966666666666667,
+    "direction": "left",
+    "avg_velocity": 2.0998384952545166
+  },
+  {
+    "frame": 330,
+    "timestamp": 11.0,
+    "direction": "up",
+    "avg_velocity": 7.820189476013184
+  },
+  {
+    "frame": 331,
+    "timestamp": 11.033333333333333,
+    "direction": "left",
+    "avg_velocity": 8.127108573913574
+  },
+  {
+    "frame": 332,
+    "timestamp": 11.066666666666666,
+    "direction": "static",
+    "avg_velocity": 0.0
+  },
+  {
+    "frame": 333,
+    "timestamp": 11.1,
+    "direction": "left",
+    "avg_velocity": 7.246939182281494
+  },
+  {
+    "frame": 334,
+    "timestamp": 11.133333333333333,
+    "direction": "left",
+    "avg_velocity": 7.45426607131958
+  },
+  {
+    "frame": 335,
+    "timestamp": 11.166666666666666,
+    "direction": "down",
+    "avg_velocity": 4.923344135284424
+  },
+  {
+    "frame": 336,
+    "timestamp": 11.2,
+    "direction": "left",
+    "avg_velocity": 7.493293762207031
+  },
+  {
+    "frame": 337,
+    "timestamp": 11.233333333333333,
+    "direction": "static",
+    "avg_velocity": 0.0
+  },
+  {
+    "frame": 338,
+    "timestamp": 11.266666666666667,
+    "direction": "down",
+    "avg_velocity": 4.178750514984131
+  },
+  {
+    "frame": 339,
+    "timestamp": 11.3,
+    "direction": "down",
+    "avg_velocity": 7.713139057159424
+  },
+  {
+    "frame": 340,
+    "timestamp": 11.333333333333334,
+    "direction": "left",
+    "avg_velocity": 7.327386379241943
+  },
+  {
+    "frame": 341,
+    "timestamp": 11.366666666666667,
+    "direction": "left",
+    "avg_velocity": 16.11849021911621
+  },
+  {
+    "frame": 342,
+    "timestamp": 11.4,
+    "direction": "static",
+    "avg_velocity": 0.0
+  },
+  {
+    "frame": 343,
+    "timestamp": 11.433333333333334,
+    "direction": "up",
+    "avg_velocity": 3.7138519287109375
+  },
+  {
+    "frame": 344,
+    "timestamp": 11.466666666666667,
+    "direction": "down",
+    "avg_velocity": 4.418245315551758
+  },
+  {
+    "frame": 345,
+    "timestamp": 11.5,
+    "direction": "down",
+    "avg_velocity": 2.5658481121063232
+  },
+  {
+    "frame": 346,
+    "timestamp": 11.533333333333333,
+    "direction": "down",
+    "avg_velocity": 3.3363726139068604
+  },
+  {
+    "frame": 347,
+    "timestamp": 11.566666666666666,
+    "direction": "static",
+    "avg_velocity": 0.0
+  },
+  {
+    "frame": 348,
+    "timestamp": 11.6,
+    "direction": "down",
+    "avg_velocity": 4.484346389770508
+  },
+  {
+    "frame": 349,
+    "timestamp": 11.633333333333333,
+    "direction": "down",
+    "avg_velocity": 3.689972400665283
+  },
+  {
+    "frame": 350,
+    "timestamp": 11.666666666666666,
+    "direction": "down",
+    "avg_velocity": 3.651743173599243
+  },
+  {
+    "frame": 351,
+    "timestamp": 11.7,
+    "direction": "left",
+    "avg_velocity": 2.0370802879333496
+  },
+  {
+    "frame": 352,
+    "timestamp": 11.733333333333333,
+    "direction": "static",
+    "avg_velocity": 0.0
+  },
+  {
+    "frame": 353,
+    "timestamp": 11.766666666666667,
+    "direction": "left",
+    "avg_velocity": 5.020742893218994
+  },
+  {
+    "frame": 354,
+    "timestamp": 11.8,
+    "direction": "up",
+    "avg_velocity": 2.6278834342956543
+  },
+  {
+    "frame": 355,
+    "timestamp": 11.833333333333334,
+    "direction": "up",
+    "avg_velocity": 7.320302963256836
+  },
+  {
+    "frame": 356,
+    "timestamp": 11.866666666666667,
+    "direction": "right",
+    "avg_velocity": 5.359078884124756
+  },
+  {
+    "frame": 357,
+    "timestamp": 11.9,
+    "direction": "static",
+    "avg_velocity": 0.0
+  },
+  {
+    "frame": 358,
+    "timestamp": 11.933333333333334,
+    "direction": "right",
+    "avg_velocity": 9.103025436401367
+  },
+  {
+    "frame": 359,
+    "timestamp": 11.966666666666667,
+    "direction": "right",
+    "avg_velocity": 4.888981342315674
+  },
+  {
+    "frame": 360,
+    "timestamp": 12.0,
+    "direction": "right",
+    "avg_velocity": 9.014455795288086
+  },
+  {
+    "frame": 361,
+    "timestamp": 12.033333333333333,
+    "direction": "right",
+    "avg_velocity": 4.83256721496582
+  },
+  {
+    "frame": 362,
+    "timestamp": 12.066666666666666,
+    "direction": "static",
+    "avg_velocity": 0.0
+  },
+  {
+    "frame": 363,
+    "timestamp": 12.1,
+    "direction": "right",
+    "avg_velocity": 5.443491458892822
+  },
+  {
+    "frame": 364,
+    "timestamp": 12.133333333333333,
+    "direction": "right",
+    "avg_velocity": 6.356846809387207
+  },
+  {
+    "frame": 365,
+    "timestamp": 12.166666666666666,
+    "direction": "right",
+    "avg_velocity": 7.235214710235596
+  },
+  {
+    "frame": 366,
+    "timestamp": 12.2,
+    "direction": "right",
+    "avg_velocity": 3.6614346504211426
+  },
+  {
+    "frame": 367,
+    "timestamp": 12.233333333333333,
+    "direction": "static",
+    "avg_velocity": 0.0
+  },
+  {
+    "frame": 368,
+    "timestamp": 12.266666666666667,
+    "direction": "down",
+    "avg_velocity": 8.18663215637207
+  },
+  {
+    "frame": 369,
+    "timestamp": 12.3,
+    "direction": "down",
+    "avg_velocity": 22.530332565307617
+  },
+  {
+    "frame": 370,
+    "timestamp": 12.333333333333334,
+    "direction": "left",
+    "avg_velocity": 17.61903190612793
+  },
+  {
+    "frame": 371,
+    "timestamp": 12.366666666666667,
+    "direction": "left",
+    "avg_velocity": 8.974355697631836
+  },
+  {
+    "frame": 372,
+    "timestamp": 12.4,
+    "direction": "static",
+    "avg_velocity": 0.0
+  },
+  {
+    "frame": 373,
+    "timestamp": 12.433333333333334,
+    "direction": "down",
+    "avg_velocity": 18.311269760131836
+  },
+  {
+    "frame": 374,
+    "timestamp": 12.466666666666667,
+    "direction": "up",
+    "avg_velocity": 16.97712516784668
+  },
+  {
+    "frame": 375,
+    "timestamp": 12.5,
+    "direction": "down",
+    "avg_velocity": 13.4302396774292
+  },
+  {
+    "frame": 376,
+    "timestamp": 12.533333333333333,
+    "direction": "up",
+    "avg_velocity": 13.6074800491333
+  },
+  {
+    "frame": 377,
+    "timestamp": 12.566666666666666,
+    "direction": "static",
+    "avg_velocity": 0.0
+  },
+  {
+    "frame": 378,
+    "timestamp": 12.6,
+    "direction": "down",
+    "avg_velocity": 6.570400238037109
+  },
+  {
+    "frame": 379,
+    "timestamp": 12.633333333333333,
+    "direction": "down",
+    "avg_velocity": 5.833369731903076
+  },
+  {
+    "frame": 380,
+    "timestamp": 12.666666666666666,
+    "direction": "up",
+    "avg_velocity": 6.644337177276611
+  },
+  {
+    "frame": 381,
+    "timestamp": 12.7,
+    "direction": "up",
+    "avg_velocity": 5.386613845825195
+  },
+  {
+    "frame": 382,
+    "timestamp": 12.733333333333333,
+    "direction": "static",
+    "avg_velocity": 0.0
+  },
+  {
+    "frame": 383,
+    "timestamp": 12.766666666666667,
+    "direction": "down",
+    "avg_velocity": 5.147368907928467
+  },
+  {
+    "frame": 384,
+    "timestamp": 12.8,
+    "direction": "down",
+    "avg_velocity": 4.202692985534668
+  },
+  {
+    "frame": 385,
+    "timestamp": 12.833333333333334,
+    "direction": "right",
+    "avg_velocity": 2.660005807876587
+  },
+  {
+    "frame": 386,
+    "timestamp": 12.866666666666667,
+    "direction": "right",
+    "avg_velocity": 4.532542705535889
+  },
+  {
+    "frame": 387,
+    "timestamp": 12.9,
+    "direction": "static",
+    "avg_velocity": 0.0
+  },
+  {
+    "frame": 388,
+    "timestamp": 12.933333333333334,
+    "direction": "right",
+    "avg_velocity": 3.72444486618042
+  },
+  {
+    "frame": 389,
+    "timestamp": 12.966666666666667,
+    "direction": "right",
+    "avg_velocity": 4.319084167480469
+  },
+  {
+    "frame": 390,
+    "timestamp": 13.0,
+    "direction": "right",
+    "avg_velocity": 3.436450958251953
+  },
+  {
+    "frame": 391,
+    "timestamp": 13.033333333333333,
+    "direction": "right",
+    "avg_velocity": 5.259275913238525
+  },
+  {
+    "frame": 392,
+    "timestamp": 13.066666666666666,
+    "direction": "static",
+    "avg_velocity": 0.0
+  },
+  {
+    "frame": 393,
+    "timestamp": 13.1,
+    "direction": "up",
+    "avg_velocity": 4.395964622497559
+  },
+  {
+    "frame": 394,
+    "timestamp": 13.133333333333333,
+    "direction": "up",
+    "avg_velocity": 5.387585163116455
+  },
+  {
+    "frame": 395,
+    "timestamp": 13.166666666666666,
+    "direction": "up",
+    "avg_velocity": 4.961112022399902
+  },
+  {
+    "frame": 396,
+    "timestamp": 13.2,
+    "direction": "up",
+    "avg_velocity": 6.750432968139648
+  },
+  {
+    "frame": 397,
+    "timestamp": 13.233333333333333,
+    "direction": "static",
+    "avg_velocity": 0.0
+  },
+  {
+    "frame": 398,
+    "timestamp": 13.266666666666667,
+    "direction": "up",
+    "avg_velocity": 4.9710516929626465
+  },
+  {
+    "frame": 399,
+    "timestamp": 13.3,
+    "direction": "up",
+    "avg_velocity": 6.394819259643555
+  },
+  {
+    "frame": 400,
+    "timestamp": 13.333333333333334,
+    "direction": "right",
+    "avg_velocity": 3.604952812194824
+  },
+  {
+    "frame": 401,
+    "timestamp": 13.366666666666667,
+    "direction": "right",
+    "avg_velocity": 5.381185054779053
+  },
+  {
+    "frame": 402,
+    "timestamp": 13.4,
+    "direction": "static",
+    "avg_velocity": 0.0
+  },
+  {
+    "frame": 403,
+    "timestamp": 13.433333333333334,
+    "direction": "static",
+    "avg_velocity": 0.0
+  },
+  {
+    "frame": 404,
+    "timestamp": 13.466666666666667,
+    "direction": "down",
+    "avg_velocity": 14.645737648010254
+  },
+  {
+    "frame": 405,
+    "timestamp": 13.5,
+    "direction": "static",
+    "avg_velocity": 0.0
+  },
+  {
+    "frame": 406,
+    "timestamp": 13.533333333333333,
+    "direction": "left",
+    "avg_velocity": 4.086874961853027
+  },
+  {
+    "frame": 407,
+    "timestamp": 13.566666666666666,
+    "direction": "static",
+    "avg_velocity": 0.0
+  },
+  {
+    "frame": 408,
+    "timestamp": 13.6,
+    "direction": "left",
+    "avg_velocity": 2.050743579864502
+  },
+  {
+    "frame": 409,
+    "timestamp": 13.633333333333333,
+    "direction": "up",
+    "avg_velocity": 7.031852722167969
+  },
+  {
+    "frame": 410,
+    "timestamp": 13.666666666666666,
+    "direction": "static",
+    "avg_velocity": 0.0
+  },
+  {
+    "frame": 411,
+    "timestamp": 13.7,
+    "direction": "left",
+    "avg_velocity": 8.439507484436035
+  },
+  {
+    "frame": 412,
+    "timestamp": 13.733333333333333,
+    "direction": "static",
+    "avg_velocity": 0.0
+  },
+  {
+    "frame": 413,
+    "timestamp": 13.766666666666667,
+    "direction": "static",
+    "avg_velocity": 0.0
+  },
+  {
+    "frame": 414,
+    "timestamp": 13.8,
+    "direction": "left",
+    "avg_velocity": 4.93766975402832
+  },
+  {
+    "frame": 415,
+    "timestamp": 13.833333333333334,
+    "direction": "static",
+    "avg_velocity": 0.0
+  },
+  {
+    "frame": 416,
+    "timestamp": 13.866666666666667,
+    "direction": "static",
+    "avg_velocity": 0.0
+  },
+  {
+    "frame": 417,
+    "timestamp": 13.9,
+    "direction": "static",
+    "avg_velocity": 0.0
+  },
+  {
+    "frame": 418,
+    "timestamp": 13.933333333333334,
+    "direction": "up",
+    "avg_velocity": 4.75040864944458
+  },
+  {
+    "frame": 419,
+    "timestamp": 13.966666666666667,
+    "direction": "static",
+    "avg_velocity": 0.0
+  },
+  {
+    "frame": 420,
+    "timestamp": 14.0,
+    "direction": "static",
+    "avg_velocity": 0.0
+  },
+  {
+    "frame": 421,
+    "timestamp": 14.033333333333333,
+    "direction": "up",
+    "avg_velocity": 2.877012014389038
+  },
+  {
+    "frame": 422,
+    "timestamp": 14.066666666666666,
+    "direction": "static",
+    "avg_velocity": 0.0
+  },
+  {
+    "frame": 423,
+    "timestamp": 14.1,
+    "direction": "static",
+    "avg_velocity": 0.0
+  },
+  {
+    "frame": 424,
+    "timestamp": 14.133333333333333,
+    "direction": "up",
+    "avg_velocity": 3.536133050918579
+  },
+  {
+    "frame": 425,
+    "timestamp": 14.166666666666666,
+    "direction": "up",
+    "avg_velocity": 2.7193689346313477
+  },
+  {
+    "frame": 426,
+    "timestamp": 14.2,
+    "direction": "up",
+    "avg_velocity": 5.831018447875977
+  },
+  {
+    "frame": 427,
+    "timestamp": 14.233333333333333,
+    "direction": "static",
+    "avg_velocity": 0.0
+  },
+  {
+    "frame": 428,
+    "timestamp": 14.266666666666667,
+    "direction": "up",
+    "avg_velocity": 4.593130588531494
+  },
+  {
+    "frame": 429,
+    "timestamp": 14.3,
+    "direction": "down",
+    "avg_velocity": 4.161139011383057
+  },
+  {
+    "frame": 430,
+    "timestamp": 14.333333333333334,
+    "direction": "down",
+    "avg_velocity": 4.632027626037598
+  },
+  {
+    "frame": 431,
+    "timestamp": 14.366666666666667,
+    "direction": "down",
+    "avg_velocity": 5.205049514770508
+  },
+  {
+    "frame": 432,
+    "timestamp": 14.4,
+    "direction": "static",
+    "avg_velocity": 0.0
+  },
+  {
+    "frame": 433,
+    "timestamp": 14.433333333333334,
+    "direction": "down",
+    "avg_velocity": 4.921905994415283
+  },
+  {
+    "frame": 434,
+    "timestamp": 14.466666666666667,
+    "direction": "down",
+    "avg_velocity": 4.801291465759277
+  },
+  {
+    "frame": 435,
+    "timestamp": 14.5,
+    "direction": "down",
+    "avg_velocity": 4.966465473175049
+  },
+  {
+    "frame": 436,
+    "timestamp": 14.533333333333333,
+    "direction": "down",
+    "avg_velocity": 4.2215189933776855
+  },
+  {
+    "frame": 437,
+    "timestamp": 14.566666666666666,
+    "direction": "static",
+    "avg_velocity": 0.0
+  },
+  {
+    "frame": 438,
+    "timestamp": 14.6,
+    "direction": "down",
+    "avg_velocity": 4.059944152832031
+  },
+  {
+    "frame": 439,
+    "timestamp": 14.633333333333333,
+    "direction": "down",
+    "avg_velocity": 3.928790330886841
+  },
+  {
+    "frame": 440,
+    "timestamp": 14.666666666666666,
+    "direction": "down",
+    "avg_velocity": 3.0284998416900635
+  },
+  {
+    "frame": 441,
+    "timestamp": 14.7,
+    "direction": "down",
+    "avg_velocity": 2.416962146759033
+  },
+  {
+    "frame": 442,
+    "timestamp": 14.733333333333333,
+    "direction": "static",
+    "avg_velocity": 0.0
+  },
+  {
+    "frame": 443,
+    "timestamp": 14.766666666666667,
+    "direction": "left",
+    "avg_velocity": 3.347259998321533
+  },
+  {
+    "frame": 444,
+    "timestamp": 14.8,
+    "direction": "left",
+    "avg_velocity": 2.267260789871216
+  },
+  {
+    "frame": 445,
+    "timestamp": 14.833333333333334,
+    "direction": "left",
+    "avg_velocity": 3.204362630844116
+  },
+  {
+    "frame": 446,
+    "timestamp": 14.866666666666667,
+    "direction": "left",
+    "avg_velocity": 4.656085014343262
+  },
+  {
+    "frame": 447,
+    "timestamp": 14.9,
+    "direction": "static",
+    "avg_velocity": 0.0
+  },
+  {
+    "frame": 448,
+    "timestamp": 14.933333333333334,
+    "direction": "left",
+    "avg_velocity": 3.7297325134277344
+  },
+  {
+    "frame": 449,
+    "timestamp": 14.966666666666667,
+    "direction": "left",
+    "avg_velocity": 3.867884635925293
+  },
+  {
+    "frame": 450,
+    "timestamp": 15.0,
+    "direction": "left",
+    "avg_velocity": 4.807810306549072
+  },
+  {
+    "frame": 451,
+    "timestamp": 15.033333333333333,
+    "direction": "left",
+    "avg_velocity": 3.8175501823425293
+  },
+  {
+    "frame": 452,
+    "timestamp": 15.066666666666666,
+    "direction": "static",
+    "avg_velocity": 0.0
+  },
+  {
+    "frame": 453,
+    "timestamp": 15.1,
+    "direction": "left",
+    "avg_velocity": 4.47567892074585
+  },
+  {
+    "frame": 454,
+    "timestamp": 15.133333333333333,
+    "direction": "left",
+    "avg_velocity": 3.5289547443389893
+  },
+  {
+    "frame": 455,
+    "timestamp": 15.166666666666666,
+    "direction": "down",
+    "avg_velocity": 9.71689510345459
+  },
+  {
+    "frame": 456,
+    "timestamp": 15.2,
+    "direction": "down",
+    "avg_velocity": 3.368821859359741
+  },
+  {
+    "frame": 457,
+    "timestamp": 15.233333333333333,
+    "direction": "static",
+    "avg_velocity": 0.0
+  },
+  {
+    "frame": 458,
+    "timestamp": 15.266666666666667,
+    "direction": "right",
+    "avg_velocity": 17.595561981201172
+  },
+  {
+    "frame": 459,
+    "timestamp": 15.3,
+    "direction": "right",
+    "avg_velocity": 7.1537017822265625
+  },
+  {
+    "frame": 460,
+    "timestamp": 15.333333333333334,
+    "direction": "left",
+    "avg_velocity": 11.220983505249023
+  },
+  {
+    "frame": 461,
+    "timestamp": 15.366666666666667,
+    "direction": "static",
+    "avg_velocity": 0.0
+  },
+  {
+    "frame": 462,
+    "timestamp": 15.4,
+    "direction": "left",
+    "avg_velocity": 13.67967414855957
+  },
+  {
+    "frame": 463,
+    "timestamp": 15.433333333333334,
+    "direction": "left",
+    "avg_velocity": 18.405546188354492
+  },
+  {
+    "frame": 464,
+    "timestamp": 15.466666666666667,
+    "direction": "left",
+    "avg_velocity": 9.8555908203125
+  },
+  {
+    "frame": 465,
+    "timestamp": 15.5,
+    "direction": "right",
+    "avg_velocity": 13.128209114074707
+  },
+  {
+    "frame": 466,
+    "timestamp": 15.533333333333333,
+    "direction": "static",
+    "avg_velocity": 0.0
+  },
+  {
+    "frame": 467,
+    "timestamp": 15.566666666666666,
+    "direction": "right",
+    "avg_velocity": 18.23773193359375
+  },
+  {
+    "frame": 468,
+    "timestamp": 15.6,
+    "direction": "right",
+    "avg_velocity": 9.840963363647461
+  },
+  {
+    "frame": 469,
+    "timestamp": 15.633333333333333,
+    "direction": "right",
+    "avg_velocity": 28.618240356445312
+  },
+  {
+    "frame": 470,
+    "timestamp": 15.666666666666666,
+    "direction": "left",
+    "avg_velocity": 8.65442180633545
+  },
+  {
+    "frame": 471,
+    "timestamp": 15.7,
+    "direction": "static",
+    "avg_velocity": 0.0
+  },
+  {
+    "frame": 472,
+    "timestamp": 15.733333333333333,
+    "direction": "right",
+    "avg_velocity": 11.536084175109863
+  },
+  {
+    "frame": 473,
+    "timestamp": 15.766666666666667,
+    "direction": "left",
+    "avg_velocity": 13.281752586364746
+  },
+  {
+    "frame": 474,
+    "timestamp": 15.8,
+    "direction": "left",
+    "avg_velocity": 6.789435863494873
+  },
+  {
+    "frame": 475,
+    "timestamp": 15.833333333333334,
+    "direction": "left",
+    "avg_velocity": 14.056492805480957
+  },
+  {
+    "frame": 476,
+    "timestamp": 15.866666666666667,
+    "direction": "static",
+    "avg_velocity": 0.0
+  },
+  {
+    "frame": 477,
+    "timestamp": 15.9,
+    "direction": "left",
+    "avg_velocity": 3.578601598739624
+  },
+  {
+    "frame": 478,
+    "timestamp": 15.933333333333334,
+    "direction": "down",
+    "avg_velocity": 4.985040187835693
+  },
+  {
+    "frame": 479,
+    "timestamp": 15.966666666666667,
+    "direction": "down",
+    "avg_velocity": 11.165183067321777
+  },
+  {
+    "frame": 480,
+    "timestamp": 16.0,
+    "direction": "down",
+    "avg_velocity": 10.566484451293945
+  },
+  {
+    "frame": 481,
+    "timestamp": 16.033333333333335,
+    "direction": "static",
+    "avg_velocity": 0.0
+  },
+  {
+    "frame": 482,
+    "timestamp": 16.066666666666666,
+    "direction": "down",
+    "avg_velocity": 14.656923294067383
+  },
+  {
+    "frame": 483,
+    "timestamp": 16.1,
+    "direction": "left",
+    "avg_velocity": 5.535606384277344
+  },
+  {
+    "frame": 484,
+    "timestamp": 16.133333333333333,
+    "direction": "up",
+    "avg_velocity": 13.874730110168457
+  },
+  {
+    "frame": 485,
+    "timestamp": 16.166666666666668,
+    "direction": "down",
+    "avg_velocity": 12.93042278289795
+  },
+  {
+    "frame": 486,
+    "timestamp": 16.2,
+    "direction": "static",
+    "avg_velocity": 0.0
+  },
+  {
+    "frame": 487,
+    "timestamp": 16.233333333333334,
+    "direction": "left",
+    "avg_velocity": 3.693838596343994
+  },
+  {
+    "frame": 488,
+    "timestamp": 16.266666666666666,
+    "direction": "down",
+    "avg_velocity": 12.243159294128418
+  },
+  {
+    "frame": 489,
+    "timestamp": 16.3,
+    "direction": "static",
+    "avg_velocity": 0.0
+  },
+  {
+    "frame": 490,
+    "timestamp": 16.333333333333332,
+    "direction": "down",
+    "avg_velocity": 10.690343856811523
+  },
+  {
+    "frame": 491,
+    "timestamp": 16.366666666666667,
+    "direction": "static",
+    "avg_velocity": 0.0
+  },
+  {
+    "frame": 492,
+    "timestamp": 16.4,
+    "direction": "up",
+    "avg_velocity": 6.025036334991455
+  },
+  {
+    "frame": 493,
+    "timestamp": 16.433333333333334,
+    "direction": "left",
+    "avg_velocity": 4.8353753089904785
+  },
+  {
+    "frame": 494,
+    "timestamp": 16.466666666666665,
+    "direction": "up",
+    "avg_velocity": 5.074592590332031
+  },
+  {
+    "frame": 495,
+    "timestamp": 16.5,
+    "direction": "up",
+    "avg_velocity": 5.288033485412598
+  },
+  {
+    "frame": 496,
+    "timestamp": 16.533333333333335,
+    "direction": "static",
+    "avg_velocity": 0.0
+  },
+  {
+    "frame": 497,
+    "timestamp": 16.566666666666666,
+    "direction": "up",
+    "avg_velocity": 5.601038932800293
+  },
+  {
+    "frame": 498,
+    "timestamp": 16.6,
+    "direction": "up",
+    "avg_velocity": 7.999922752380371
+  },
+  {
+    "frame": 499,
+    "timestamp": 16.633333333333333,
+    "direction": "up",
+    "avg_velocity": 6.3287272453308105
+  },
+  {
+    "frame": 500,
+    "timestamp": 16.666666666666668,
+    "direction": "up",
+    "avg_velocity": 7.4742536544799805
+  },
+  {
+    "frame": 501,
+    "timestamp": 16.7,
+    "direction": "static",
+    "avg_velocity": 0.0
+  },
+  {
+    "frame": 502,
+    "timestamp": 16.733333333333334,
+    "direction": "up",
+    "avg_velocity": 6.508311748504639
+  },
+  {
+    "frame": 503,
+    "timestamp": 16.766666666666666,
+    "direction": "up",
+    "avg_velocity": 5.017962455749512
+  },
+  {
+    "frame": 504,
+    "timestamp": 16.8,
+    "direction": "up",
+    "avg_velocity": 10.865352630615234
+  },
+  {
+    "frame": 505,
+    "timestamp": 16.833333333333332,
+    "direction": "right",
+    "avg_velocity": 6.802333831787109
+  },
+  {
+    "frame": 506,
+    "timestamp": 16.866666666666667,
+    "direction": "static",
+    "avg_velocity": 0.0
+  },
+  {
+    "frame": 507,
+    "timestamp": 16.9,
+    "direction": "up",
+    "avg_velocity": 11.040898323059082
+  },
+  {
+    "frame": 508,
+    "timestamp": 16.933333333333334,
+    "direction": "static",
+    "avg_velocity": 0.0
+  },
+  {
+    "frame": 509,
+    "timestamp": 16.966666666666665,
+    "direction": "left",
+    "avg_velocity": 8.206876754760742
+  },
+  {
+    "frame": 510,
+    "timestamp": 17.0,
+    "direction": "static",
+    "avg_velocity": 0.0
+  },
+  {
+    "frame": 511,
+    "timestamp": 17.033333333333335,
+    "direction": "static",
+    "avg_velocity": 0.0
+  },
+  {
+    "frame": 512,
+    "timestamp": 17.066666666666666,
+    "direction": "left",
+    "avg_velocity": 5.227052211761475
+  },
+  {
+    "frame": 513,
+    "timestamp": 17.1,
+    "direction": "right",
+    "avg_velocity": 4.521950721740723
+  },
+  {
+    "frame": 514,
+    "timestamp": 17.133333333333333,
+    "direction": "left",
+    "avg_velocity": 5.5726776123046875
+  }
+]

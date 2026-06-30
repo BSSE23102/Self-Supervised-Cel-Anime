@@ -17,6 +17,8 @@ frontend/node_modules/
 dist/
 frontend/dist/
 .vite/
+vite-cache/
+frontend/vite-cache/
 *.tsbuildinfo
 npm-debug.log*
 yarn-debug.log*

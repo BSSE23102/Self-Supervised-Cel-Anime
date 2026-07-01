@@ -1,5 +1,13 @@
 from __future__ import annotations
 
+"""Optical-flow visualization utilities.
+
+The live UI uses a clean vector overlay rather than a full-frame heatmap. Dense
+HSV flow maps are still supported for diagnostics, but the default renderer
+prioritizes readable presentation output: original frame plus sparse,
+high-confidence motion arrows.
+"""
+
 from typing import Any
 
 import cv2
@@ -7,6 +15,8 @@ import numpy as np
 
 
 def _flow_tensor_to_numpy(flow_tensor: Any) -> np.ndarray:
+    """Accept Torch/NumPy flow tensors and return H x W x 2 float32 arrays."""
+
     if hasattr(flow_tensor, "detach"):
         flow_tensor = flow_tensor.detach()
     if hasattr(flow_tensor, "cpu"):
@@ -36,6 +46,8 @@ def _flow_tensor_to_numpy(flow_tensor: Any) -> np.ndarray:
 
 
 def _resize_flow_to_frame(flow: np.ndarray, frame_shape: tuple[int, int]) -> np.ndarray:
+    """Resize flow to match a frame while preserving displacement units."""
+
     frame_h, frame_w = frame_shape
     flow_h, flow_w = flow.shape[:2]
 
@@ -45,6 +57,10 @@ def _resize_flow_to_frame(flow: np.ndarray, frame_shape: tuple[int, int]) -> np.
     scale_x = frame_w / max(flow_w, 1)
     scale_y = frame_h / max(flow_h, 1)
     resized = cv2.resize(flow, (frame_w, frame_h), interpolation=cv2.INTER_LINEAR)
+
+    # Resizing changes the spatial coordinate system. The vector components must
+    # be scaled too, otherwise a 10-pixel displacement at half resolution would
+    # still look like only 10 pixels after returning to full resolution.
     resized[..., 0] *= scale_x
     resized[..., 1] *= scale_y
     return resized
@@ -56,6 +72,12 @@ def _robust_value_channel(
     activation_percentile: float,
     saturation_percentile: float,
 ) -> np.ndarray:
+    """Map motion magnitude to a robust HSV value/brightness channel.
+
+    Percentile normalization prevents a single extreme vector from making every
+    other moving region look black. This is only used when show_heatmap=True.
+    """
+
     moving = magnitude[magnitude > 1e-6]
     if moving.size == 0:
         return np.zeros_like(magnitude, dtype=np.uint8)
@@ -72,6 +94,9 @@ def _robust_value_channel(
     clipped = np.clip(magnitude, low, high)
     normalized = (clipped - low) / (high - low)
     normalized[magnitude <= low] = 0.0
+
+    # Gamma-like compression keeps subtle action visible without letting noisy
+    # mid-range motion dominate the diagnostic layer.
     normalized = np.power(normalized, 1.65)
     value = np.round(normalized * 220.0).astype(np.uint8)
     return cv2.GaussianBlur(value, (0, 0), sigmaX=1.2, sigmaY=1.2)
@@ -84,6 +109,13 @@ def _draw_selective_velocity_needles(
     threshold: float,
     step: int,
 ) -> np.ndarray:
+    """Draw sparse arrows only where local motion is strong and coherent.
+
+    A generic grid of arrows makes anime scenes unreadable. This routine samples
+    a grid, looks inside a local window, and draws an arrow only if enough pixels
+    exceed the adaptive magnitude threshold.
+    """
+
     height, width = magnitude.shape
     half_window = max(step // 3, 5)
     max_vector_length = max(float(step) * 1.05, 1.0)
@@ -105,6 +137,8 @@ def _draw_selective_velocity_needles(
             if active_ratio < 0.025:
                 continue
 
+            # Magnitude-weighted averaging gives the arrow the dominant local
+            # direction instead of trusting a single noisy grid-center vector.
             weights = local_magnitude[active_mask].astype(np.float32)
             weight_sum = float(weights.sum())
             if weight_sum <= 1e-6:
@@ -121,6 +155,8 @@ def _draw_selective_velocity_needles(
             start_x = int(np.clip(round(float(np.sum(xx[active_mask] * weights) / weight_sum)), 0, width - 1))
             start_y = int(np.clip(round(float(np.sum(yy[active_mask] * weights) / weight_sum)), 0, height - 1))
 
+            # Cap visual length so fast cuts do not produce arrows that stretch
+            # across the whole frame and hide the source animation.
             scale = min(1.0, max_vector_length / length)
             end_x = int(np.clip(round(start_x + dx * scale), 0, width - 1))
             end_y = int(np.clip(round(start_y + dy * scale), 0, height - 1))
@@ -170,12 +206,17 @@ def render_academic_flow_visualization(
     source_frame = np.ascontiguousarray(frame, dtype=np.uint8)
     flow = _flow_tensor_to_numpy(flow_tensor)
     flow = _resize_flow_to_frame(flow, source_frame.shape[:2])
+
+    # Smooth the vector field before visualization. This does not change the
+    # search metadata; it only makes the rendered arrows less jittery.
     flow = cv2.GaussianBlur(flow, (0, 0), sigmaX=1.8, sigmaY=1.8)
 
     u = flow[..., 0]
     v = flow[..., 1]
     magnitude, angle = cv2.cartToPolar(u, v, angleInDegrees=True)
 
+    # The threshold adapts per frame: a quiet scene draws little or nothing, and
+    # a fast action scene shows only the top-motion regions.
     moving = magnitude[magnitude > 1e-6]
     if moving.size == 0:
         threshold = float("inf")
@@ -193,6 +234,8 @@ def render_academic_flow_visualization(
     )
 
     if show_heatmap:
+        # OpenCV HSV hue is [0, 179], so degrees [0, 360] are divided by 2.
+        # Hue represents direction; value represents robustly normalized speed.
         hsv = np.zeros(source_frame.shape, dtype=np.uint8)
         hsv[..., 0] = np.mod(angle / 2.0, 180.0).astype(np.uint8)
         hsv[..., 1] = 180
@@ -206,5 +249,7 @@ def render_academic_flow_visualization(
     else:
         base = source_frame
 
+    # The arrow layer is black except where arrows are drawn, so addWeighted()
+    # preserves the source frame and adds green vectors on top.
     composite = cv2.addWeighted(base, 1.0, arrow_layer, arrow_alpha, 0.0)
     return np.clip(composite, 0, 255).astype(np.uint8)

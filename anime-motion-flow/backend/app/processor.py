@@ -1,5 +1,12 @@
 from __future__ import annotations
 
+"""Video decoding, preprocessing, streaming, and motion-index utilities.
+
+This module connects raw uploaded MP4 files to the model/visualization layers.
+It intentionally uses generators so FastAPI can begin streaming frames while the
+rest of the clip is still being processed.
+"""
+
 import json
 import os
 import tempfile
@@ -17,12 +24,19 @@ import numpy as np
 from .model import infer_flow
 from .visualization import render_academic_flow_visualization
 
+# Boundary token used by multipart/x-mixed-replace. Each encoded JPEG frame is
+# written as one part in the stream.
 BOUNDARY = b"frame"
+
+# Pixel/frame threshold used for semantic metadata extraction. Values below this
+# are treated as background noise for direction and average velocity summaries.
 MOTION_THRESHOLD = 2.0
 MotionMetadata: TypeAlias = dict[str, int | float | str]
 
 
 def _flow_tensor_to_numpy(flow_tensor: Any) -> np.ndarray:
+    """Normalize Torch or NumPy flow tensors to H x W x 2 float32 arrays."""
+
     if hasattr(flow_tensor, "detach"):
         flow_tensor = flow_tensor.detach()
     if hasattr(flow_tensor, "cpu"):
@@ -52,10 +66,14 @@ def _flow_tensor_to_numpy(flow_tensor: Any) -> np.ndarray:
 
 
 def _dominant_direction(angles: np.ndarray, mask: np.ndarray) -> str:
+    """Convert dense per-pixel flow angles into one coarse direction label."""
+
     if not np.any(mask):
         return "static"
 
     active_angles = angles[mask]
+    # OpenCV cartToPolar uses image coordinates: 0 degrees is right, 90 degrees
+    # is down, 180 degrees is left, and 270 degrees is up.
     bins = {
         "right": int(np.count_nonzero((active_angles < 45.0) | (active_angles >= 315.0))),
         "down": int(np.count_nonzero((active_angles >= 45.0) & (active_angles < 135.0))),
@@ -66,6 +84,13 @@ def _dominant_direction(angles: np.ndarray, mask: np.ndarray) -> str:
 
 
 def extract_motion_metadata(flow_tensor: Any, frame_index: int, fps: float) -> MotionMetadata:
+    """Create one searchable motion descriptor for a processed frame pair.
+
+    The dense flow field is reduced to a timestamp, dominant direction, and
+    average velocity over moving pixels. This keeps the search index compact
+    while preserving the main action cue for a presentation/demo workflow.
+    """
+
     flow = _flow_tensor_to_numpy(flow_tensor)
     magnitude, angles = cv2.cartToPolar(flow[..., 0], flow[..., 1], angleInDegrees=True)
     moving_mask = magnitude > MOTION_THRESHOLD
@@ -85,6 +110,12 @@ def extract_motion_metadata(flow_tensor: Any, frame_index: int, fps: float) -> M
 
 
 def save_upload_to_temp(upload_file) -> Path:
+    """Persist an UploadFile to a temporary MP4 path.
+
+    FastAPI's UploadFile is stream-backed; saving it once gives OpenCV a normal
+    filesystem path for VideoCapture while keeping memory usage bounded.
+    """
+
     suffix = Path(upload_file.filename or "upload.mp4").suffix.lower()
     if suffix != ".mp4":
         suffix = ".mp4"
@@ -104,6 +135,13 @@ def save_upload_to_temp(upload_file) -> Path:
 
 
 def compute_motion_reference_frame(frame: np.ndarray) -> np.ndarray:
+    """Build the 2D image used for optical-flow estimation.
+
+    Anime clips often contain sharp line art, flat color, and compression noise.
+    Bilateral smoothing preserves major boundaries while reducing noise; the
+    grayscale/blurred output gives Farneback or RAFT a stable intensity surface.
+    """
+
     if frame is None or frame.size == 0:
         raise ValueError("Empty frame received from decoder")
 
@@ -113,6 +151,14 @@ def compute_motion_reference_frame(frame: np.ndarray) -> np.ndarray:
 
 
 def compute_structure_edge_map(frame: np.ndarray) -> np.ndarray:
+    """Return a Sobel line/structure map for research diagnostics.
+
+    The live flow path currently uses smoothed luminance frames because edge-only
+    flow was too noisy for presentation. Keeping this function makes it easy to
+    compare future structural-alignment experiments without rewriting the
+    preprocessing code.
+    """
+
     if frame is None or frame.size == 0:
         raise ValueError("Empty frame received from decoder")
 
@@ -127,6 +173,8 @@ def compute_structure_edge_map(frame: np.ndarray) -> np.ndarray:
 
 
 def encode_jpeg(frame: np.ndarray) -> bytes:
+    """Encode one BGR frame as JPEG bytes for HTTP image responses."""
+
     ok, buffer = cv2.imencode(".jpg", frame, [int(cv2.IMWRITE_JPEG_QUALITY), 85])
     if not ok:
         raise ValueError("Could not encode output frame")
@@ -138,6 +186,13 @@ def multipart_frame_generator(
     motion_registry: list[MotionMetadata] | None = None,
     motion_index_path: Path | None = None,
 ) -> Generator[bytes, None, None]:
+    """Yield multipart JPEG chunks for the processed video stream.
+
+    Processing happens pairwise: frame_t is compared with frame_t+1 to estimate
+    flow for frame_t+1. The first raw frame is yielded immediately so the UI has
+    a visible image before the first pairwise flow result is ready.
+    """
+
     capture = cv2.VideoCapture(str(video_path))
     if not capture.isOpened():
         raise ValueError("The uploaded video could not be decoded by OpenCV")
@@ -161,6 +216,9 @@ def multipart_frame_generator(
             motion_frame = compute_motion_reference_frame(frame)
             flow = infer_flow(prev_motion_frame, motion_frame)
             if motion_registry is not None:
+                # Registry entries are lightweight JSON records. They let the UI
+                # search motion after or during a stream without storing full
+                # flow tensors for every frame.
                 motion_registry.append(extract_motion_metadata(flow, frame_index, fps))
 
             overlay = render_academic_flow_visualization(frame, flow)
@@ -170,6 +228,8 @@ def multipart_frame_generator(
     finally:
         capture.release()
         if motion_registry is not None and motion_index_path is not None:
+            # Persist when the generator finishes. With multipart streaming, this
+            # happens after the browser has consumed the clip or the stream ends.
             motion_index_path.write_text(
                 json.dumps(motion_registry, indent=2),
                 encoding="utf-8",
@@ -177,6 +237,8 @@ def multipart_frame_generator(
 
 
 def render_preview_frame(video_path: Path) -> np.ndarray:
+    """Decode and return the first raw frame of a job video."""
+
     capture = cv2.VideoCapture(str(video_path))
     if not capture.isOpened():
         raise ValueError("The uploaded video could not be decoded by OpenCV")
@@ -191,6 +253,8 @@ def render_preview_frame(video_path: Path) -> np.ndarray:
 
 
 def render_frame_at_index(video_path: Path, frame_index: int) -> np.ndarray:
+    """Decode a specific 1-based frame index for search-result thumbnails."""
+
     if frame_index < 1:
         raise ValueError("frame_index must be 1 or greater")
 
@@ -209,6 +273,8 @@ def render_frame_at_index(video_path: Path, frame_index: int) -> np.ndarray:
 
 
 def _multipart_chunk(frame: np.ndarray) -> bytes:
+    """Wrap a JPEG frame in multipart response headers."""
+
     jpeg = encode_jpeg(frame)
     headers = (
         b"--" + BOUNDARY + b"\r\n"
@@ -223,6 +289,8 @@ def stream_as_multipart(
     motion_registry: list[MotionMetadata] | None = None,
     motion_index_path: Path | None = None,
 ):
+    """Factory used by FastAPI so each request receives a fresh generator."""
+
     def generator():
         yield from multipart_frame_generator(video_path, motion_registry, motion_index_path)
 
